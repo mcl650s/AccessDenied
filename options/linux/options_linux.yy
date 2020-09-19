@@ -2,7 +2,7 @@
   "option_linux_display_name": "Access Denied",
   "option_linux_version": "1.0.0.0",
   "option_linux_maintainer_email": "",
-  "option_linux_homepage": "",
+  "option_linux_homepage": "https://matt-mader.itch.io/access-denied",
   "option_linux_short_desc": "",
   "option_linux_long_desc": "",
   "option_linux_splash_screen": "${base_options_dir}\\linux\\splash\\splash.png",

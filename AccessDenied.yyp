@@ -10,6 +10,7 @@
     {"id":{"name":"scr_test","path":"scripts/scr_test/scr_test.yy",},"order":0,},
     {"id":{"name":"ts_test","path":"tilesets/ts_test/ts_test.yy",},"order":0,},
     {"id":{"name":"crv_test","path":"animcurves/crv_test/crv_test.yy",},"order":0,},
+    {"id":{"name":"shd_LUT","path":"shaders/shd_LUT/shd_LUT.yy",},"order":1,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":0,},
   ],
   "Options": [

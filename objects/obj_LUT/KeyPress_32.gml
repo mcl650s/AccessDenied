@@ -4,5 +4,5 @@ if(strength > 0)
 }
 else
 {
-	strength = 0.9;
+	strength = 1;
 }

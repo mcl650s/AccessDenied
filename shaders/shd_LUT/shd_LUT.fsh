@@ -1,7 +1,7 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 uniform float strength;
-uniform sampler2D lux_tex;
+uniform sampler2D lut_tex;
 
 //Variable Definitions
 //      TEX_SIZE_IN_PX 256.0
@@ -31,7 +31,7 @@ void main()
     upper_sample.y = upper_cell.y * CELL_SIZE + HALF_TEXEL_SIZE + CELL_SIZE_FIXED * base_col.g;
 
     //Output
-    vec3 out_col = mix(texture2D(lux_tex, lower_sample).rgb, texture2D(lux_tex, upper_sample).rgb, fract(blue_cell));
+    vec3 out_col = mix(texture2D(lut_tex, lower_sample).rgb, texture2D(lut_tex, upper_sample).rgb, fract(blue_cell));
     out_col = mix(base_col.rgb, out_col, strength);
     gl_FragColor = v_vColour * vec4(out_col, base_col.a);
 }

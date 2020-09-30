@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_genericWall",
-    "path": "sprites/spr_genericWall/spr_genericWall.yy",
+    "name": "spr_genericPlayer",
+    "path": "sprites/spr_genericPlayer/spr_genericPlayer.yy",
   },
-  "solid": false,
-  "visible": true,
+  "solid": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -20,15 +20,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_genericPlayer","path":"objects/obj_genericPlayer/obj_genericPlayer.yy",},"parent":{"name":"obj_demoKill","path":"objects/obj_demoKill/obj_demoKill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Demo Objects",
+    "path": "folders/Objects/Demo Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_genericWall",
+  "name": "obj_demoKill",
   "tags": [],
   "resourceType": "GMObject",
 }

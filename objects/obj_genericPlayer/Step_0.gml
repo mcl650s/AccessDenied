@@ -17,7 +17,7 @@ if (keyboard_check(ord("A")))
 		}
 	}
 }
-else if (keyboard_check(ord("D")))
+if (keyboard_check(ord("D")))
 {
 	if (!place_meeting(x + walkSpeed, y, obj_genericWall))
 	{
@@ -31,7 +31,7 @@ else if (keyboard_check(ord("D")))
 		}
 	}	
 }
-else if (keyboard_check(ord("W")))
+if (keyboard_check(ord("W")))
 {
 	if (!place_meeting(x, y - walkSpeed, obj_genericWall))
 	{
@@ -45,7 +45,7 @@ else if (keyboard_check(ord("W")))
 		}
 	}
 }
-else if (keyboard_check(ord("S")))
+if (keyboard_check(ord("S")))
 {
 	if (!place_meeting(x, y + walkSpeed, obj_genericWall))
 	{

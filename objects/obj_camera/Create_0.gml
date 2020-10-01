@@ -9,6 +9,7 @@ camera_set_proj_mat(camera, projectionMatrix);
 view_camera[0] = camera;
 
 follow = obj_genericPlayer;
+//follow = obj_genericEnemy;
 
 // used in the 'Step' script
 xTo = x;

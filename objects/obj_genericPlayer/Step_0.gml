@@ -1,12 +1,12 @@
-walkSpeed = 5;
+moveSpeed = 5;
 
 // WASD movement controls
 if (keyboard_check(ord("A")))
 {
 	// if there is not a wall 'walkSpeed' away
-	if (!place_meeting(x - walkSpeed, y, obj_genericWall))
+	if (!place_meeting(x - moveSpeed, y, obj_genericWall))
 	{
-		x -= walkSpeed;
+		x -= moveSpeed;
 	}
 	// otherwise, a wall is close the player will move within one pixel of the wall
 	else
@@ -19,9 +19,9 @@ if (keyboard_check(ord("A")))
 }
 if (keyboard_check(ord("D")))
 {
-	if (!place_meeting(x + walkSpeed, y, obj_genericWall))
+	if (!place_meeting(x + moveSpeed, y, obj_genericWall))
 	{
-		x += walkSpeed;
+		x += moveSpeed;
 	}
 	else
 	{
@@ -33,9 +33,9 @@ if (keyboard_check(ord("D")))
 }
 if (keyboard_check(ord("W")))
 {
-	if (!place_meeting(x, y - walkSpeed, obj_genericWall))
+	if (!place_meeting(x, y - moveSpeed, obj_genericWall))
 	{
-		y -= walkSpeed;
+		y -= moveSpeed;
 	}
 	else
 	{
@@ -47,9 +47,9 @@ if (keyboard_check(ord("W")))
 }
 if (keyboard_check(ord("S")))
 {
-	if (!place_meeting(x, y + walkSpeed, obj_genericWall))
+	if (!place_meeting(x, y + moveSpeed, obj_genericWall))
 	{
-		y += walkSpeed;
+		y += moveSpeed;
 	}
 	else
 	{

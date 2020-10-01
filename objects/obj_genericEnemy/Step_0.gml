@@ -52,23 +52,23 @@ switch (state)
 
 function isCollision()
 {
-	if (place_meeting(x - chaseSpeed, y, obj_genericWall) ||
-		place_meeting(x - chaseSpeed, y, obj_invisibleWall))
+	if (place_meeting(x - (chaseSpeed + 1), y, obj_genericWall) ||
+		place_meeting(x - (chaseSpeed + 1), y, obj_invisibleWall))
 	{
 		return true;
 	}
-	if (place_meeting(x + chaseSpeed, y, obj_genericWall) ||
-		place_meeting(x + chaseSpeed, y, obj_invisibleWall))
+	if (place_meeting(x + (chaseSpeed + 1), y, obj_genericWall) ||
+		place_meeting(x + (chaseSpeed + 1), y, obj_invisibleWall))
 	{
 		return true;
 	}
-	if (place_meeting(x, y - chaseSpeed, obj_genericWall) ||
-		place_meeting(x, y - chaseSpeed, obj_invisibleWall))
+	if (place_meeting(x, y - (chaseSpeed + 1), obj_genericWall) ||
+		place_meeting(x, y - (chaseSpeed + 1), obj_invisibleWall))
 	{
 		return true;
 	}
-	if (place_meeting(x, y + chaseSpeed, obj_genericWall) ||
-		place_meeting(x, y + chaseSpeed, obj_invisibleWall))
+	if (place_meeting(x, y + (chaseSpeed + 1), obj_genericWall) ||
+		place_meeting(x, y + (chaseSpeed + 1), obj_invisibleWall))
 	{
 		return true;
 	}

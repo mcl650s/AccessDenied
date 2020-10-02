@@ -5,7 +5,7 @@ x2 = camera_get_view_x(1) + camera_get_view_width(1) - string_width("Try hitting
 
 if(deathCount < 2)
 {
-	draw_text(x1, camera_get_view_y(1), "Follow the red path");
+	draw_text(x1, camera_get_view_y(1), "Stay on the red path");
 }
 else
 {

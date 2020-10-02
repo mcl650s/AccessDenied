@@ -27,7 +27,9 @@ switch (state)
 		
 		if (distance_to_object(obj_genericPlayer) < 108)
 		{
-			state = e_state.chase;	
+			xPrev = x;
+			yPrev = y;
+			state = e_state.chase;
 		}
 	}
 	break;
@@ -45,30 +47,45 @@ switch (state)
 		
 		if (distance_to_object(obj_genericPlayer) > 128)
 		{
+			state = e_state.relax;	
+		}
+	}
+	break;
+	
+	case e_state.relax:
+	{
+		if (round(x) != round(xPrev) && round(y) != round(yPrev))
+		{
+			move_towards_point(xPrev, yPrev, patrolSpeed);
+		}
+		else
+		{
+			speed = 0;
 			state = e_state.patrol;	
 		}
 	}
+	break;
 }
 
 function isCollision()
 {
-	if (place_meeting(x - (chaseSpeed + 1), y, obj_genericWall) ||
-		place_meeting(x - (chaseSpeed + 1), y, obj_invisibleWall))
+	if (place_meeting(x - (chaseSpeed), y, obj_genericWall) ||
+		place_meeting(x - (chaseSpeed), y, obj_invisibleWall))
 	{
 		return true;
 	}
-	if (place_meeting(x + (chaseSpeed + 1), y, obj_genericWall) ||
-		place_meeting(x + (chaseSpeed + 1), y, obj_invisibleWall))
+	if (place_meeting(x + (chaseSpeed), y, obj_genericWall) ||
+		place_meeting(x + (chaseSpeed), y, obj_invisibleWall))
 	{
 		return true;
 	}
-	if (place_meeting(x, y - (chaseSpeed + 1), obj_genericWall) ||
-		place_meeting(x, y - (chaseSpeed + 1), obj_invisibleWall))
+	if (place_meeting(x, y - (chaseSpeed), obj_genericWall) ||
+		place_meeting(x, y - (chaseSpeed), obj_invisibleWall))
 	{
 		return true;
 	}
-	if (place_meeting(x, y + (chaseSpeed + 1), obj_genericWall) ||
-		place_meeting(x, y + (chaseSpeed + 1), obj_invisibleWall))
+	if (place_meeting(x, y + (chaseSpeed), obj_genericWall) ||
+		place_meeting(x, y + (chaseSpeed), obj_invisibleWall))
 	{
 		return true;
 	}

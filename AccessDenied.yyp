@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":3,},
     {"id":{"name":"fnt_test","path":"fonts/fnt_test/fnt_test.yy",},"order":0,},
+    {"id":{"name":"obj_cone","path":"objects/obj_cone/obj_cone.yy",},"order":9,},
     {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},"order":0,},
     {"id":{"name":"spr_demoTilesBlue","path":"sprites/spr_demoTilesBlue/spr_demoTilesBlue.yy",},"order":1,},
     {"id":{"name":"spr_genericEnemy","path":"sprites/spr_genericEnemy/spr_genericEnemy.yy",},"order":8,},
@@ -21,6 +22,7 @@
     {"id":{"name":"obj_demoController","path":"objects/obj_demoController/obj_demoController.yy",},"order":0,},
     {"id":{"name":"obj_invisibleWall","path":"objects/obj_invisibleWall/obj_invisibleWall.yy",},"order":8,},
     {"id":{"name":"spr_demo_tileset","path":"sprites/spr_demo_tileset/spr_demo_tileset.yy",},"order":7,},
+    {"id":{"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},"order":10,},
     {"id":{"name":"scr_test","path":"scripts/scr_test/scr_test.yy",},"order":0,},
     {"id":{"name":"ts_test","path":"tilesets/ts_test/ts_test.yy",},"order":0,},
     {"id":{"name":"ts_demoRed","path":"tilesets/ts_demoRed/ts_demoRed.yy",},"order":1,},

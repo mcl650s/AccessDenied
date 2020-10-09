@@ -1,3 +1,13 @@
+if (moveUp)
+{
+	image_angle = 90;	
+}
+else 
+{
+	image_angle = 270;	
+}
+
+
 switch (state)
 {
 	case e_state.patrol:
@@ -25,11 +35,23 @@ switch (state)
 			}
 		}
 		
+		/*
 		if (distance_to_object(obj_genericPlayer) < 108)
 		{
 			xPrev = x;
 			yPrev = y;
 			state = e_state.chase;
+		}
+		*/
+		if (point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) < sightRange)
+		{
+			targetDirection = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
+			if (abs(angle_difference(targetDirection, image_angle)) < sightAngle)
+			{
+				xPrev = x;
+				yPrev = y;
+				state = e_state.chase;
+			}
 		}
 	}
 	break;
@@ -92,3 +114,8 @@ function isCollision()
 	
 	return false;
 }
+
+direction = point_direction(x, y, mouse_x, mouse_y) - 90; // may need to change adjustment value depending on sprite
+seno = dsin(point_direction(x, y, mouse_x, mouse_y));
+cose = dcos(point_direction(x, y, mouse_x, mouse_y));
+

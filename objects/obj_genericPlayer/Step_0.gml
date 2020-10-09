@@ -1,61 +1,22 @@
-moveSpeed = 5;
+moveSpeed = 3;
 
-// WASD movement controls
-if (keyboard_check(ord("A")))
-{
-	// if there is not a wall 'walkSpeed' away
-	if (!place_meeting(x - moveSpeed, y, obj_genericWall))
-	{
-		x -= moveSpeed;
-	}
-	// otherwise, a wall is close the player will move within one pixel of the wall
-	else
-	{
-		while (!place_meeting(x - 1, y, obj_genericWall))
-		{
-			x--;	
-		}
-	}
+moveX = 0;
+moveY = 0;
+ 
+//Key Checking
+for ( var i = 0; i < array_length_1d(movement_inputs); i++){
+    keyPressed = movement_inputs[i];
+    if keyboard_check(keyPressed) {
+        moveAngle = i*90;
+        moveX += lengthdir_x(1, moveAngle);
+        moveY += lengthdir_y(1, moveAngle);
+    }
 }
-if (keyboard_check(ord("D")))
-{
-	if (!place_meeting(x + moveSpeed, y, obj_genericWall))
-	{
-		x += moveSpeed;
-	}
-	else
-	{
-		while (!place_meeting(x + 1, y, obj_genericWall))
-		{
-			x++;	
-		}
-	}	
-}
-if (keyboard_check(ord("W")))
-{
-	if (!place_meeting(x, y - moveSpeed, obj_genericWall))
-	{
-		y -= moveSpeed;
-	}
-	else
-	{
-		while (!place_meeting(x, y - 1, obj_genericWall))
-		{
-			y--;	
-		}
-	}
-}
-if (keyboard_check(ord("S")))
-{
-	if (!place_meeting(x, y + moveSpeed, obj_genericWall))
-	{
-		y += moveSpeed;
-	}
-	else
-	{
-		while (!place_meeting(x, y + 1, obj_genericWall))
-		{
-			y++;	
-		}
-	}
+ 
+//Actual Movement
+moving = ( point_distance(0,0,moveX,moveY) > 0 );
+if moving  {
+    movementDir = point_direction(0,0,moveX,moveY);
+    move(moveSpeed, movementDir);
+    move(moveSpeed, movementDir);
 }

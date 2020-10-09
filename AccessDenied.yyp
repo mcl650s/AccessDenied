@@ -3,6 +3,7 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":3,},
     {"id":{"name":"fnt_test","path":"fonts/fnt_test/fnt_test.yy",},"order":0,},
     {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},"order":0,},
+    {"id":{"name":"scr_move","path":"scripts/scr_move/scr_move.yy",},"order":1,},
     {"id":{"name":"spr_demoTilesBlue","path":"sprites/spr_demoTilesBlue/spr_demoTilesBlue.yy",},"order":1,},
     {"id":{"name":"spr_genericEnemy","path":"sprites/spr_genericEnemy/spr_genericEnemy.yy",},"order":8,},
     {"id":{"name":"shd_test","path":"shaders/shd_test/shd_test.yy",},"order":0,},

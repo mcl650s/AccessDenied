@@ -13,15 +13,13 @@ enum e_dir
 }
 
 state = e_state.patrol;
-patrolDir = e_dir.x; // for potential future use
-patrolSpeed = 2;
+//patrolDir = e_dir.x; // for potential future use
+patrolSpeed = 1;
 chaseSpeed = 4;
-xPrev = -1;
-yPrev = -1;
+xPrev = x;
+yPrev = y;
 moveUp = true;
+eAngle = 90;
 
-// vision cone
-//cone = instance_create_depth(x, y, -5, obj_cone);
-//cone.owner = id;
-sightAngle = 45;
-sightRange = 200;
+hsp = 1;
+vsp = 1;

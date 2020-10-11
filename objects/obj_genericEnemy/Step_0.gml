@@ -1,57 +1,49 @@
 if (moveUp)
 {
-	image_angle = 90;	
+	vsp = -1 * patrolSpeed;
 }
-else 
+else
 {
-	image_angle = 270;	
+	vsp = 1 * patrolSpeed;
 }
-
 
 switch (state)
 {
 	case e_state.patrol:
-	{
+	{			
+		xPrev = x;
+		yPrev = y;
+		
 		if (moveUp && !place_meeting(x, y - patrolSpeed, obj_genericWall) &&
 			!place_meeting(x, y - patrolSpeed, obj_invisibleWall))
 		{
-			y -= patrolSpeed;
+			y += vsp;
 			
 			if (place_meeting(x, y - patrolSpeed, obj_genericWall) ||
 				place_meeting(x, y - patrolSpeed, obj_invisibleWall))
 			{
 				moveUp = false;
+				eAngle = 270;
 			}
 		}
 		else if (!moveUp && !place_meeting(x, y + patrolSpeed, obj_genericWall) &&
 			!place_meeting(x, y + patrolSpeed, obj_invisibleWall))
 		{
-			y += patrolSpeed;
+			y += vsp;
 			
 			if (place_meeting(x, y + patrolSpeed, obj_genericWall) ||
 				place_meeting(x, y + patrolSpeed, obj_invisibleWall))
 			{
 				moveUp = true;
+				eAngle = 90;
 			}
 		}
 		
-		/*
-		if (distance_to_object(obj_genericPlayer) < 108)
+		toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
+		if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) < 216) and
+			(angle_difference(toPlayer, eAngle) < 45) and (angle_difference(toPlayer, eAngle) > -45))
 		{
-			xPrev = x;
-			yPrev = y;
 			state = e_state.chase;
-		}
-		*/
-		if (point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) < sightRange)
-		{
-			targetDirection = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
-			if (abs(angle_difference(targetDirection, image_angle)) < sightAngle)
-			{
-				xPrev = x;
-				yPrev = y;
-				state = e_state.chase;
-			}
 		}
 	}
 	break;
@@ -67,9 +59,11 @@ switch (state)
 			move_towards_point(obj_genericPlayer.x, obj_genericPlayer.y, chaseSpeed)
 		}
 		
-		if (distance_to_object(obj_genericPlayer) > 128)
+		toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
+		if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 108) and
+			(!(angle_difference(toPlayer, eAngle) < 45) and (angle_difference(toPlayer, eAngle) > -45)))
 		{
-			state = e_state.relax;	
+			state = e_state.relax;
 		}
 	}
 	break;
@@ -79,6 +73,14 @@ switch (state)
 		if (round(x) != round(xPrev) && round(y) != round(yPrev))
 		{
 			move_towards_point(xPrev, yPrev, patrolSpeed);
+			if (moveUp)
+			{
+				eAngle = 90;	
+			}
+			else
+			{
+				eAngle = 270;	
+			}
 		}
 		else
 		{
@@ -114,8 +116,3 @@ function isCollision()
 	
 	return false;
 }
-
-direction = point_direction(x, y, mouse_x, mouse_y) - 90; // may need to change adjustment value depending on sprite
-seno = dsin(point_direction(x, y, mouse_x, mouse_y));
-cose = dcos(point_direction(x, y, mouse_x, mouse_y));
-

@@ -27,8 +27,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "AccessDenied",
-    "path": "AccessDenied.yyp",
+    "name": "Enemy Objects",
+    "path": "folders/Objects/Enemy Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_genericEnemy",

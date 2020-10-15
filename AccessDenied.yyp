@@ -23,6 +23,7 @@
     {"id":{"name":"obj_cone","path":"objects/obj_cone/obj_cone.yy",},"order":9,},
     {"id":{"name":"scr_move","path":"scripts/scr_move/scr_move.yy",},"order":1,},
     {"id":{"name":"spr_Player","path":"sprites/spr_Player/spr_Player.yy",},"order":7,},
+    {"id":{"name":"spr_genericEnemy","path":"sprites/spr_genericEnemy/spr_genericEnemy.yy",},"order":4,},
     {"id":{"name":"obj_genericEnemy","path":"objects/obj_genericEnemy/obj_genericEnemy.yy",},"order":7,},
     {"id":{"name":"spr_invisibleWall","path":"sprites/spr_invisibleWall/spr_invisibleWall.yy",},"order":5,},
     {"id":{"name":"spr_Civilian","path":"sprites/spr_Civilian/spr_Civilian.yy",},"order":9,},

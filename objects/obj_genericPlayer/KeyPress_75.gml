@@ -1,4 +1,10 @@
 ///@description Non-Lethal Kill Code
+if(alarm[1] > 0)
+{
+	return;
+}
+
+#region: Find and Get Location of Nearest Guard and Civ
 if(instance_exists(obj_guard))
 {
 	guardNearest = instance_nearest(x, y, obj_guard);
@@ -18,19 +24,23 @@ else
 {
 	civDistance = 100000;
 }
+#endregion
 
+#region: Kill Code
 if(civDistance < 96 || guardDistance < 96)
 {
 	if(guardDistance == civDistance)
 	{}
 	else if(guardDistance < civDistance)
 	{
-		//Used Kill on Civilian
+		//Used Non-Lethal Kill on Guard
 		room_restart();
 	}
 	else
 	{
-		//Used Kill on Guard
+		//Used Non-Lethal Kill on Civilian
 		instance_destroy(civNearest);
+		alarm[1] = cooldown;
 	}
 }
+#endregion

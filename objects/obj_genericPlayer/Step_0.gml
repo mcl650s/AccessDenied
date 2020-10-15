@@ -3,7 +3,7 @@ moveSpeed = 2;
 moveX = 0;
 moveY = 0;
  
-//Key Checking
+#region: Key Checking
 for ( var i = 0; i < array_length_1d(movement_inputs); i++){
     keyPressed = movement_inputs[i];
     if keyboard_check(keyPressed) {
@@ -12,11 +12,13 @@ for ( var i = 0; i < array_length_1d(movement_inputs); i++){
         moveY += lengthdir_y(1, moveAngle);
     }
 }
+#endregion
  
-//Actual Movement
+#region: Actual Movement
 moving = ( point_distance(0,0,moveX,moveY) > 0 );
 if moving  {
     movementDir = point_direction(0,0,moveX,moveY);
     move(moveSpeed, movementDir);
     move(moveSpeed, movementDir);
 }
+#endregion

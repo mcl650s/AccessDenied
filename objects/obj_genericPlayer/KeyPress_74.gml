@@ -1,4 +1,10 @@
 ///@description Lethal Kill Code
+if(alarm[0] > 0)
+{
+	return;
+}
+
+#region: Find and Get Location of Nearest Guard and Civ
 if(instance_exists(obj_guard))
 {
 	guardNearest = instance_nearest(x, y, obj_guard);
@@ -18,7 +24,9 @@ else
 {
 	civDistance = 100000;
 }
+#endregion
 
+#region: Kill Code
 if(civDistance < 96 || guardDistance < 96)
 {
 	if(guardDistance == civDistance)
@@ -32,5 +40,7 @@ if(civDistance < 96 || guardDistance < 96)
 	{
 		//Used Kill on Guard
 		instance_destroy(guardNearest);
+		alarm[0] = cooldown;
 	}
 }
+#endregion

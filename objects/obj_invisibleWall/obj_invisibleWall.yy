@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy Objects",
-    "path": "folders/Objects/Enemy Objects.yy",
+    "name": "AccessDenied",
+    "path": "AccessDenied.yyp",
   },
   "resourceVersion": "1.0",
   "name": "obj_invisibleWall",

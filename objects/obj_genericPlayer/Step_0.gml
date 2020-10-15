@@ -1,4 +1,4 @@
-moveSpeed = 2;
+moveSpeed = 3.25;
 
 moveX = 0;
 moveY = 0;
@@ -18,7 +18,14 @@ for ( var i = 0; i < array_length_1d(movement_inputs); i++){
 moving = ( point_distance(0,0,moveX,moveY) > 0 );
 if moving  {
     movementDir = point_direction(0,0,moveX,moveY);
-    move(moveSpeed, movementDir);
+	if(movementDir > 95 && movementDir < 265)
+	{
+		image_xscale = -1;
+	}
+	else
+	{
+		image_xscale = 1;
+	}
     move(moveSpeed, movementDir);
 }
 #endregion

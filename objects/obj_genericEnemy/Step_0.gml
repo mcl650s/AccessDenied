@@ -18,10 +18,12 @@ if (patrolAxisX)
 			
 			if (movePos)
 			{
+				image_xscale = 1;
 				move(patrolSpeed, 0);
 			}
 			else
 			{
+				image_xscale = -1;
 				move(patrolSpeed, 180);	
 			}
 			
@@ -50,6 +52,14 @@ if (patrolAxisX)
 		case e_state.chase:
 		{
 			toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
+			if(toPlayer > 95 && toPlayer < 265)
+			{
+				image_xscale = -1;
+			}
+			else
+			{
+				image_xscale = 1;
+			}
 			move(chaseSpeed, toPlayer);		
 			
 			if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 108) and
@@ -128,6 +138,14 @@ else // *patrolAxisY
 		case e_state.chase:
 		{
 			toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
+			if(toPlayer > 95 && toPlayer < 265)
+			{
+				image_xscale = -1;
+			}
+			else
+			{
+				image_xscale = 1;
+			}
 			move(chaseSpeed, toPlayer);
 		
 			if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 108) and

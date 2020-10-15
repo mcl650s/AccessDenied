@@ -49,16 +49,9 @@ if (patrolAxisX)
 	
 		case e_state.chase:
 		{
-			if (isCollision(x, y, chaseSpeed))
-			{
-				move_towards_point(obj_genericPlayer.x, obj_genericPlayer.y, 0)
-			}
-			else
-			{
-				move_towards_point(obj_genericPlayer.x, obj_genericPlayer.y, chaseSpeed)
-			}
-		
 			toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
+			move(chaseSpeed, toPlayer);		
+			
 			if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 108) and
 				(!(angle_difference(toPlayer, eAngle) < 45) and (angle_difference(toPlayer, eAngle) > -45)))
 			{
@@ -71,7 +64,9 @@ if (patrolAxisX)
 		{
 			if (round(x) != round(xPrev) && round(y) != round(yPrev))
 			{
-				move_towards_point(xPrev, yPrev, patrolSpeed);
+				//Temp Pathfinding so it doesn't walk through walls
+				mp_potential_settings(45, 5, 10, 0);
+				mp_potential_step_object(xPrev, yPrev, patrolSpeed, obj_genericWall);
 				if (movePos)
 				{
 					eAngle = 180;	
@@ -132,16 +127,9 @@ else // *patrolAxisY
 	
 		case e_state.chase:
 		{
-			if (isCollision(x, y, chaseSpeed))
-			{
-				move_towards_point(obj_genericPlayer.x, obj_genericPlayer.y, 0)
-			}
-			else
-			{
-				move_towards_point(obj_genericPlayer.x, obj_genericPlayer.y, chaseSpeed)
-			}
-		
 			toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
+			move(chaseSpeed, toPlayer);
+		
 			if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 108) and
 				(!(angle_difference(toPlayer, eAngle) < 45) and (angle_difference(toPlayer, eAngle) > -45)))
 			{
@@ -154,7 +142,9 @@ else // *patrolAxisY
 		{
 			if (round(x) != round(xPrev) && round(y) != round(yPrev))
 			{
-				move_towards_point(xPrev, yPrev, patrolSpeed);
+				//Temp Pathfinding so it doesn't walk through walls
+				mp_potential_settings(45, 5, 10, 0);
+				mp_potential_step_object(xPrev, yPrev, patrolSpeed, obj_genericWall);
 				if (movePos)
 				{
 					eAngle = 90;	

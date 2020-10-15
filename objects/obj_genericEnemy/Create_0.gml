@@ -6,8 +6,6 @@ enum e_state
 	relax
 }
 
-patrolAxisX = false;
-
 state = e_state.patrol;
 patrolSpeed = 1;
 chaseSpeed = 3;

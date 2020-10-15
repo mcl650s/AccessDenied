@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_civilian",
-    "path": "sprites/spr_civilian/spr_civilian.yy",
+    "name": "spr_guard",
+    "path": "sprites/spr_guard/spr_guard.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
     "path": "folders/Objects/Enemy Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_civilian",
+  "name": "obj_guard",
   "tags": [],
   "resourceType": "GMObject",
 }

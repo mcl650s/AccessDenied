@@ -10,7 +10,7 @@
   "bbox_left": 0,
   "bbox_right": 383,
   "bbox_top": 0,
-  "bbox_bottom": 319,
+  "bbox_bottom": 351,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 32,
+  "gridY": 32,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"ae5c076b-b919-4377-af6f-5bf4e273a32a","path":"sprites/spr_mainTileset/spr_mainTileset.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"ae5c076b-b919-4377-af6f-5bf4e273a32a","path":"sprites/spr_mainTileset/spr_mainTileset.yy",},"LayerId":{"name":"27c1b095-9877-4368-8074-d788490c84ad","path":"sprites/spr_mainTileset/spr_mainTileset.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

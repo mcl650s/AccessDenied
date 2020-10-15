@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_genericEnemy",
-    "path": "sprites/spr_genericEnemy/spr_genericEnemy.yy",
+    "name": "spr_guard",
+    "path": "sprites/spr_guard/spr_guard.yy",
   },
   "solid": false,
   "visible": true,

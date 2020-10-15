@@ -2,26 +2,26 @@ if (patrolAxisX)
 {
 	if (movePos) 
 	{
-		xD = x;
-		yD = y + 32;
+		xD = x + 16;
+		yD = y + 10;
 	}
 	else
 	{
-		xD = x + 64;
-		yD = y + 32;
+		xD = x + 16;
+		yD = y + 10;
 	}
 }
 else // *patrolAxisY
 {
 	if (movePos) 
 	{
-		xD = x + 32;
-		yD = y;
+		xD = x + 16;
+		yD = y + 10;
 	}
 	else
 	{
-		xD = x + 32;
-		yD = y + 64;
+		xD = x + 16;
+		yD = y + 10;
 	}
 }
 

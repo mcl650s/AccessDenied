@@ -27,6 +27,7 @@
     {"id":{"name":"spr_invisibleWall","path":"sprites/spr_invisibleWall/spr_invisibleWall.yy",},"order":9,},
     {"id":{"name":"obj_invisibleWall","path":"objects/obj_invisibleWall/obj_invisibleWall.yy",},"order":8,},
     {"id":{"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},"order":10,},
+    {"id":{"name":"scr_checkCollision","path":"scripts/scr_checkCollision/scr_checkCollision.yy",},"order":2,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},

@@ -6,20 +6,15 @@ enum e_state
 	relax
 }
 
-enum e_dir
-{
-	x,
-	y
-}
-
 state = e_state.patrol;
-//patrolDir = e_dir.x; // for potential future use
 patrolSpeed = 1;
-chaseSpeed = 4;
+chaseSpeed = 3;
 xPrev = x;
 yPrev = y;
-moveUp = true;
-eAngle = 90;
+movePos = true; // misnomer for the x-axis
+sp = 1;
 
-hsp = 1;
-vsp = 1;
+// axis dependent
+if (patrolAxisX) eAngle = 180;
+else eAngle = 90;
+

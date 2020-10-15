@@ -1,5 +1,4 @@
 #region Sprite & Shader:
-sprite = spr_test;
 shader = shd_LUT;
 strength = 1;
 u_strength = shader_get_uniform(shader, "strength");

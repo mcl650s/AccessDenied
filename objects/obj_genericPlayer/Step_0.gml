@@ -1,4 +1,4 @@
-moveSpeed = 3;
+moveSpeed = 2;
 
 moveX = 0;
 moveY = 0;

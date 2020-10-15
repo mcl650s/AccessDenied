@@ -26,7 +26,6 @@
     {"id":{"name":"spr_genericEnemy","path":"sprites/spr_genericEnemy/spr_genericEnemy.yy",},"order":4,},
     {"id":{"name":"obj_genericEnemy","path":"objects/obj_genericEnemy/obj_genericEnemy.yy",},"order":7,},
     {"id":{"name":"spr_invisibleWall","path":"sprites/spr_invisibleWall/spr_invisibleWall.yy",},"order":5,},
-    {"id":{"name":"spr_Civilian","path":"sprites/spr_Civilian/spr_Civilian.yy",},"order":9,},
     {"id":{"name":"obj_invisibleWall","path":"objects/obj_invisibleWall/obj_invisibleWall.yy",},"order":8,},
     {"id":{"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},"order":6,},
     {"id":{"name":"spr_Guard","path":"sprites/spr_Guard/spr_Guard.yy",},"order":8,},

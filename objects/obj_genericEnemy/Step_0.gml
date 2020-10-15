@@ -15,30 +15,27 @@ if (patrolAxisX)
 		{			
 			xPrev = x;
 			yPrev = y;
-		
-			if (movePos && !place_meeting(x - patrolSpeed, y, obj_genericWall) &&
-				!place_meeting(x - patrolSpeed, y, obj_invisibleWall))
-			{
-				x += sp;
 			
-				if (place_meeting(x - patrolSpeed, y, obj_genericWall) ||
-					place_meeting(x - patrolSpeed, y, obj_invisibleWall))
-				{
-					movePos = false;
-					eAngle = 0;
-				}
+			if (movePos)
+			{
+				move(patrolSpeed, 0);
 			}
-			else if (!movePos && !place_meeting(x + patrolSpeed, y, obj_genericWall) &&
-				!place_meeting(x + patrolSpeed, y, obj_invisibleWall))
+			else
 			{
-				x += sp;
+				move(patrolSpeed, 180);	
+			}
 			
-				if (place_meeting(x + patrolSpeed, y, obj_genericWall) ||
-					place_meeting(x + patrolSpeed, y, obj_invisibleWall))
-				{
-					movePos = true;
-					eAngle = 180;
-				}
+			if (place_meeting(x - patrolSpeed, y, obj_genericWall) ||
+				place_meeting(x - patrolSpeed, y, obj_invisibleWall))
+			{
+				movePos = false;
+				eAngle = 0;
+			}			
+			else if (place_meeting(x + patrolSpeed, y, obj_genericWall) ||
+				place_meeting(x + patrolSpeed, y, obj_invisibleWall))
+			{
+				movePos = true;
+				eAngle = 180;
 			}
 		
 			toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
@@ -101,30 +98,27 @@ else // *patrolAxisY
 		{			
 			xPrev = x;
 			yPrev = y;
-		
-			if (movePos && !place_meeting(x, y - patrolSpeed, obj_genericWall) &&
-				!place_meeting(x, y - patrolSpeed, obj_invisibleWall))
-			{
-				y += sp;
 			
-				if (place_meeting(x, y - patrolSpeed, obj_genericWall) ||
-					place_meeting(x, y - patrolSpeed, obj_invisibleWall))
-				{
-					movePos = false;
-					eAngle = 270;
-				}
+			if (movePos)
+			{
+				move(patrolSpeed, 90);
 			}
-			else if (!movePos && !place_meeting(x, y + patrolSpeed, obj_genericWall) &&
-				!place_meeting(x, y + patrolSpeed, obj_invisibleWall))
+			else
 			{
-				y += sp;
+				move(patrolSpeed, 270);	
+			}
 			
-				if (place_meeting(x, y + patrolSpeed, obj_genericWall) ||
-					place_meeting(x, y + patrolSpeed, obj_invisibleWall))
-				{
-					movePos = true;
-					eAngle = 90;
-				}
+			if (place_meeting(x, y - patrolSpeed, obj_genericWall) ||
+				place_meeting(x, y - patrolSpeed, obj_invisibleWall))
+			{
+				movePos = false;
+				eAngle = 270;
+			}			
+			else if (place_meeting(x, y + patrolSpeed, obj_genericWall) ||
+				place_meeting(x, y + patrolSpeed, obj_invisibleWall))
+			{
+				movePos = true;
+				eAngle = 90;
 			}
 		
 			toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
@@ -179,31 +173,3 @@ else // *patrolAxisY
 		break;
 	}
 }
-
-// ctrl+k is block comment =`)
-
-//function isCollision()
-//{
-//	if (place_meeting(x - (chaseSpeed), y, obj_genericWall) ||
-//		place_meeting(x - (chaseSpeed), y, obj_invisibleWall))
-//	{
-//		return true;
-//	}
-//	if (place_meeting(x + (chaseSpeed), y, obj_genericWall) ||
-//		place_meeting(x + (chaseSpeed), y, obj_invisibleWall))
-//	{
-//		return true;
-//	}
-//	if (place_meeting(x, y - (chaseSpeed), obj_genericWall) ||
-//		place_meeting(x, y - (chaseSpeed), obj_invisibleWall))
-//	{
-//		return true;
-//	}
-//	if (place_meeting(x, y + (chaseSpeed), obj_genericWall) ||
-//		place_meeting(x, y + (chaseSpeed), obj_invisibleWall))
-//	{
-//		return true;
-//	}
-	
-//	return false;
-//}

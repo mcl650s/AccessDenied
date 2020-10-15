@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Enemy Objects",
+    "path": "folders/Objects/Enemy Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_cone",

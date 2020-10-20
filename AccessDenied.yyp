@@ -18,6 +18,7 @@
     {"id":{"name":"spr_killNonLethalCD","path":"sprites/spr_killNonLethalCD/spr_killNonLethalCD.yy",},"order":13,},
     {"id":{"name":"sfx_test","path":"sounds/sfx_test/sfx_test.yy",},"order":0,},
     {"id":{"name":"spr_genericWall","path":"sprites/spr_genericWall/spr_genericWall.yy",},"order":1,},
+    {"id":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"order":14,},
     {"id":{"name":"obj_genericPlayer","path":"objects/obj_genericPlayer/obj_genericPlayer.yy",},"order":2,},
     {"id":{"name":"obj_LUT","path":"objects/obj_LUT/obj_LUT.yy",},"order":3,},
     {"id":{"name":"scr_test","path":"scripts/scr_test/scr_test.yy",},"order":0,},
@@ -35,7 +36,6 @@
     {"id":{"name":"spr_invisibleWall","path":"sprites/spr_invisibleWall/spr_invisibleWall.yy",},"order":9,},
     {"id":{"name":"obj_invisibleWall","path":"objects/obj_invisibleWall/obj_invisibleWall.yy",},"order":4,},
     {"id":{"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},"order":10,},
-    {"id":{"name":"scr_checkCollision","path":"scripts/scr_checkCollision/scr_checkCollision.yy",},"order":2,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -51,8 +51,8 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"rm_demoLevel","path":"rooms/rm_demoLevel/rm_demoLevel.yy",},
     {"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},
+    {"name":"rm_demoLevel","path":"rooms/rm_demoLevel/rm_demoLevel.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

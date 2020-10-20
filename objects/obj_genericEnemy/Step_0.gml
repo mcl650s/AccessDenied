@@ -1,183 +1,85 @@
-if (movePos)
+switch (state)
 {
-	sp = -1 * patrolSpeed;
-}
-else
-{
-	sp = 1 * patrolSpeed;
-}
-
-if (patrolAxisX)
-{
-	switch (state)
-	{
-		case e_state.patrol:
-		{			
+	case e_state.patrol:
+	{			
+		eAngle = direction;
+		
+		if (abs(round(x) - round(nextX)) < 2  && abs(round(y) - round(nextY)) < 2)
+		{				
+			path_delete(path);
+			path = path_add();		
+				
+			currentPoint += 1;
+			if (currentPoint == numPatrolPoints) 
+			{
+				currentPoint = 0;
+			}
+			nextX = patrolCoordinates[currentPoint, 0];
+			nextY = patrolCoordinates[currentPoint, 1];
+				
+			if (mp_grid_path(global.grid, path, x, y, nextX, nextY, 1)) 
+			{
+				path_start(path, patrolSpeed, path_action_stop, false);	
+			}
+		}
+		
+		toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
+		if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) < 208) and
+			(angle_difference(toPlayer, eAngle) < 45) and (angle_difference(toPlayer, eAngle) > -45))
+		{
 			xPrev = x;
 			yPrev = y;
-			
-			if (movePos)
-			{
-				image_xscale = 1;
-				move(patrolSpeed, 0);
-			}
-			else
-			{
-				image_xscale = -1;
-				move(patrolSpeed, 180);	
-			}
-			
-			if (place_meeting(x - patrolSpeed, y, obj_genericWall) ||
-				place_meeting(x - patrolSpeed, y, obj_invisibleWall))
-			{
-				movePos = false;
-				eAngle = 0;
-			}			
-			else if (place_meeting(x + patrolSpeed, y, obj_genericWall) ||
-				place_meeting(x + patrolSpeed, y, obj_invisibleWall))
-			{
-				movePos = true;
-				eAngle = 180;
-			}
-		
-			toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
-			if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) < 216) and
-				(angle_difference(toPlayer, eAngle) < 45) and (angle_difference(toPlayer, eAngle) > -45))
-			{
-				state = e_state.chase;
-			}
+			path_delete(path);
+			state = e_state.chase;
 		}
-		break;
-	
-		case e_state.chase:
-		{
-			toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
-			if(toPlayer > 95 && toPlayer < 265)
-			{
-				image_xscale = -1;
-			}
-			else
-			{
-				image_xscale = 1;
-			}
-			move(chaseSpeed, toPlayer);		
-			
-			if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 108) and
-				(!(angle_difference(toPlayer, eAngle) < 45) and (angle_difference(toPlayer, eAngle) > -45)))
-			{
-				state = e_state.relax;
-			}
-		}
-		break;
-	
-		case e_state.relax:
-		{
-			if (round(x) != round(xPrev) && round(y) != round(yPrev))
-			{
-				//Temp Pathfinding so it doesn't walk through walls
-				mp_potential_settings(45, 5, 10, 0);
-				mp_potential_step_object(xPrev, yPrev, patrolSpeed, obj_genericWall);
-				if (movePos)
-				{
-					eAngle = 180;	
-				}
-				else
-				{
-					eAngle = 0;	
-				}
-			}
-			else
-			{
-				speed = 0;
-				state = e_state.patrol;	
-			}
-		}
-		break;
 	}
-}	
-else // *patrolAxisY
-{
-	switch (state)
+	break;
+	
+	case e_state.chase:
 	{
-		case e_state.patrol:
-		{			
-			xPrev = x;
-			yPrev = y;
-			
-			if (movePos)
-			{
-				move(patrolSpeed, 90);
-			}
-			else
-			{
-				move(patrolSpeed, 270);	
-			}
-			
-			if (place_meeting(x, y - patrolSpeed, obj_genericWall) ||
-				place_meeting(x, y - patrolSpeed, obj_invisibleWall))
-			{
-				movePos = false;
-				eAngle = 270;
-			}			
-			else if (place_meeting(x, y + patrolSpeed, obj_genericWall) ||
-				place_meeting(x, y + patrolSpeed, obj_invisibleWall))
-			{
-				movePos = true;
-				eAngle = 90;
-			}
+		toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
+		eAngle = toPlayer;
 		
-			toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
-			if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) < 216) and
-				(angle_difference(toPlayer, eAngle) < 45) and (angle_difference(toPlayer, eAngle) > -45))
-			{
-				state = e_state.chase;
-			}
-		}
-		break;
-	
-		case e_state.chase:
+		move(chaseSpeed, toPlayer);		
+			
+		if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 256) ||
+			(!(angle_difference(toPlayer, eAngle) < 45) && (angle_difference(toPlayer, eAngle) > -45)))
 		{
-			toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
-			if(toPlayer > 95 && toPlayer < 265)
-			{
-				image_xscale = -1;
-			}
-			else
-			{
-				image_xscale = 1;
-			}
-			move(chaseSpeed, toPlayer);
-		
-			if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 108) and
-				(!(angle_difference(toPlayer, eAngle) < 45) and (angle_difference(toPlayer, eAngle) > -45)))
-			{
-				state = e_state.relax;
-			}
+			state = e_state.relax;
 		}
-		break;
-	
-		case e_state.relax:
-		{
-			if (round(x) != round(xPrev) && round(y) != round(yPrev))
-			{
-				//Temp Pathfinding so it doesn't walk through walls
-				mp_potential_settings(45, 5, 10, 0);
-				mp_potential_step_object(xPrev, yPrev, patrolSpeed, obj_genericWall);
-				if (movePos)
-				{
-					eAngle = 90;	
-				}
-				else
-				{
-					eAngle = 270;	
-				}
-			}
-			else
-			{
-				speed = 0;
-				state = e_state.patrol;	
-			}
-		}
-		break;
 	}
+	break;
+	
+	case e_state.relax:
+	{
+		eAngle = direction;
+		
+		if (!chilling)
+		{
+			chilling = true;
+			//path_delete(path);
+			path = path_add();
+			
+			if (mp_grid_path(global.grid, path, x, y, xPrev, yPrev, 1)) 
+			{
+				path_start(path, patrolSpeed, path_action_stop, false);	
+			}
+		}
+		
+		if (abs(round(x) - round(xPrev)) < 2 && abs(round(y) - round(yPrev)) < 2)
+		{
+			speed = 0;
+			chilling = false;
+			state = e_state.patrol;	
+			
+			path_delete(path);
+			path = path_add();
+			
+			if (mp_grid_path(global.grid, path, x, y, nextX, nextY, 1)) 
+			{
+				path_start(path, patrolSpeed, path_action_stop, false);	
+			}
+		}
+	}
+	break;
 }

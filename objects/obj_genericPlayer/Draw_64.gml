@@ -21,3 +21,79 @@ shader_set(obj_LUT.shader);
 shader_reset();
 gpu_set_tex_filter(false);
 #endregion
+
+#region: Killed Civilian
+if(killedCiv)
+{
+	draw_set_alpha(alphaTemp);
+	draw_set_color(c_black);
+	draw_rectangle(0,0, camera_get_view_width(0), camera_get_view_height(0), 0);
+	alphaTemp += 0.01
+	draw_set_alpha(1);
+	if(alphaTemp >= 1)
+	{
+		draw_set_color(c_white);
+		draw_set_font(fnt_test);
+		draw_text(camera_get_view_width(0)/2 - string_width("DO NOT KILL CIVILIANS")/2, camera_get_view_height(0)/2 - string_height("DO NOT KILL CIVILIANS")/2, "DO ");
+		if(alphaTemp == 1)
+		{
+			audio_play_sound(snd_textNoise, 1, 0);
+		}
+		if(alphaTemp >= 1.2)
+		{
+			draw_text(camera_get_view_width(0)/2 - string_width("DO NOT KILL CIVILIANS")/2 + string_width("DO "), camera_get_view_height(0)/2 - string_height("DO NOT KILL CIVILIANS")/2, "NOT ");	
+			if(alphaTemp == 1.2)
+			{
+				audio_play_sound(snd_textNoise, 1, 0);
+			}
+		}
+		if(alphaTemp >= 1.4)
+		{
+			draw_text(camera_get_view_width(0)/2 - string_width("DO NOT KILL CIVILIANS")/2 + string_width("DO NOT "), camera_get_view_height(0)/2 - string_height("DO NOT KILL CIVILIANS")/2, "KILL ");	
+			if(alphaTemp == 1.4)
+			{	
+				audio_play_sound(snd_textNoise, 1, 0);
+			}
+		}
+		if(alphaTemp >= 1.6)
+		{
+			draw_text(camera_get_view_width(0)/2 - string_width("DO NOT KILL CIVILIANS")/2 + string_width("DO NOT KILL "), camera_get_view_height(0)/2 - string_height("DO NOT KILL CIVILIANS")/2, "CIVILIANS");	
+			if(alphaTemp == 1.6)
+			{
+				audio_play_sound(snd_textNoise, 1, 0);
+			}
+		}
+	}
+}
+#endregion
+
+#region: Non-Lethal Guard
+if(spareGuard)
+{
+	draw_set_alpha(alphaTemp);
+	draw_set_color(c_black);
+	draw_rectangle(0,0, camera_get_view_width(0), camera_get_view_height(0), 0);
+	alphaTemp += 0.01
+	draw_set_alpha(1);
+	if(alphaTemp >= 1)
+	{
+		draw_set_color(c_white);
+		draw_set_font(fnt_test);
+		draw_text(camera_get_view_width(0)/2 - string_width("NO MERCY")/2, camera_get_view_height(0)/2 - string_height("NO MERCY")/2, "NO ");
+		if(alphaTemp == 1)
+		{
+			audio_play_sound(snd_textNoise, 1, 0);
+		}
+		if(alphaTemp >= 1.25)
+		{
+			draw_text(camera_get_view_width(0)/2 - string_width("NO MERCY")/2 + string_width("NO "), camera_get_view_height(0)/2 - string_height("NO MERCY")/2, "MERCY");	
+			if(alphaTemp == 1.25)
+			{
+				audio_play_sound(snd_textNoise, 1, 0);
+			}
+			
+		}
+
+	}
+}
+#endregion

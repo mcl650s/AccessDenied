@@ -34,13 +34,14 @@ if(civDistance < 96 || guardDistance < 96)
 	else if(civDistance < guardDistance)
 	{
 		//Used Kill on Civilian
-		room_restart();
+		killedCiv = true;
 	}
 	else
 	{
 		//Used Kill on Guard
 		instance_destroy(guardNearest);
 		alarm[0] = cooldown;
+		alarm[1] = cooldown;
 	}
 }
 #endregion

@@ -34,13 +34,14 @@ if(civDistance < 96 || guardDistance < 96)
 	else if(guardDistance < civDistance)
 	{
 		//Used Non-Lethal Kill on Guard
-		room_restart();
+		spareGuard = true;
 	}
 	else
 	{
 		//Used Non-Lethal Kill on Civilian
 		instance_destroy(civNearest);
 		alarm[1] = cooldown;
+		alarm[0] = cooldown;
 	}
 }
 #endregion

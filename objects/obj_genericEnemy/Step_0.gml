@@ -1,3 +1,12 @@
+if(direction > 95 && direction < 265)
+{
+	image_xscale = -1;
+}
+else
+{
+	image_xscale = 1;
+}
+
 switch (state)
 {
 	case e_state.patrol:
@@ -50,11 +59,16 @@ switch (state)
 		if (abs(round(x) - round(alarmInstance.x)) < 10 
 			&& abs(round(y) - round(alarmInstance.y + 70)) < 10)
 		{
-			obj_camera.follow = self;
+			if(!global.gameEnd)
+			{
+				obj_camera.follow = self;
+				global.gameEnd = true;
+			}
 			if(abs(round(x) - round(obj_camera.x)) < 10 
 				&& abs(round(y) - round(obj_camera.y)) < 10)
 			{
 				obj_diamond.lost = true;
+				alarmInstance.image_index = 1;
 			}
 		}
 		// for now, do nothing else while running to alarm

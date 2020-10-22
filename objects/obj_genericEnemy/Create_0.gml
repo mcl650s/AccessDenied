@@ -36,3 +36,5 @@ if (mp_grid_path(global.grid, path, x, y, nextX, nextY, 1))
 draw_set_color(c_yellow);
 alarmInstance = noone;
 
+global.gameEnd = false;
+

@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":3,},
+    {"id":{"name":"snd_buttonClick","path":"sounds/snd_buttonClick/snd_buttonClick.yy",},"order":3,},
     {"id":{"name":"obj_diamond","path":"objects/obj_diamond/obj_diamond.yy",},"order":13,},
     {"id":{"name":"spr_civilian","path":"sprites/spr_civilian/spr_civilian.yy",},"order":11,},
     {"id":{"name":"fnt_test","path":"fonts/fnt_test/fnt_test.yy",},"order":0,},
@@ -30,14 +31,14 @@
     {"id":{"name":"shd_LUT","path":"shaders/shd_LUT/shd_LUT.yy",},"order":1,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":0,},
     {"id":{"name":"spr_LUT","path":"sprites/spr_LUT/spr_LUT.yy",},"order":3,},
-    {"id":{"name":"obj_cone","path":"objects/obj_cone/obj_cone.yy",},"order":3,},
+    {"id":{"name":"snd_textNoise","path":"sounds/snd_textNoise/snd_textNoise.yy",},"order":2,},
     {"id":{"name":"obj_alarm","path":"objects/obj_alarm/obj_alarm.yy",},"order":15,},
+    {"id":{"name":"obj_introScene","path":"objects/obj_introScene/obj_introScene.yy",},"order":16,},
     {"id":{"name":"scr_move","path":"scripts/scr_move/scr_move.yy",},"order":1,},
     {"id":{"name":"spr_killLethalCD","path":"sprites/spr_killLethalCD/spr_killLethalCD.yy",},"order":14,},
     {"id":{"name":"obj_guard","path":"objects/obj_guard/obj_guard.yy",},"order":2,},
     {"id":{"name":"spr_invisibleWall","path":"sprites/spr_invisibleWall/spr_invisibleWall.yy",},"order":9,},
     {"id":{"name":"obj_invisibleWall","path":"objects/obj_invisibleWall/obj_invisibleWall.yy",},"order":4,},
-    {"id":{"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},"order":10,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},

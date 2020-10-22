@@ -4,7 +4,7 @@ if(pickedUp)
 	y = obj_genericPlayer.y + 5;
 }
 
-if(alphaTemp >= 2)
+if(alphaTemp >= 3)
 {
 	room_restart();	
 }

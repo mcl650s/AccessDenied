@@ -8,3 +8,8 @@ if(alphaTemp >= 3)
 {
 	room_restart();	
 }
+
+if(alphaTemp >= 1.75 && x < 320 && y < 300)
+{
+	game_end();	
+}

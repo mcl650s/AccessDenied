@@ -24,12 +24,20 @@ switch (state)
 		}
 		
 		toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
-		if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) < 208) and
-			(angle_difference(toPlayer, eAngle) < 45) and (angle_difference(toPlayer, eAngle) > -45))
+		if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) < 208) &&
+			((angle_difference(toPlayer, eAngle) < 45) && (angle_difference(toPlayer, eAngle) > -45))
+			&& !collision_line(x, y, obj_genericPlayer.x, obj_genericPlayer.y, obj_genericWall, false, false))
 		{
-			xPrev = x;
-			yPrev = y;
+			alarmInstance = instance_nearest(x, y, obj_alarm);
+		
 			path_delete(path);
+			path = path_add();
+		
+			if (mp_grid_path(global.grid, path, x, y, alarmInstance.x, alarmInstance.y + 70, 1))
+			{
+				path_start(path, chaseSpeed, path_action_stop, false);	
+			}
+		
 			state = e_state.chase;
 		}
 	}
@@ -37,16 +45,24 @@ switch (state)
 	
 	case e_state.chase:
 	{
-		toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
-		eAngle = toPlayer;
+		eAngle = direction;
 		
-		move(chaseSpeed, toPlayer);		
-			
-		if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 256) ||
-			(!(angle_difference(toPlayer, eAngle) < 45) && (angle_difference(toPlayer, eAngle) > -45)))
+		if (abs(round(x) - round(alarmInstance.x)) < 10 
+			&& abs(round(y) - round(alarmInstance.y + 70)) < 10)
 		{
-			state = e_state.relax;
+			room_restart();
 		}
+		// for now, do nothing else while running to alarm
+		
+		//toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
+		
+		//move(chaseSpeed, toPlayer);		
+			
+		//if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 256) ||
+		//	(!(angle_difference(toPlayer, eAngle) < 45) && (angle_difference(toPlayer, eAngle) > -45)))
+		//{
+		//	state = e_state.relax;
+		//}
 	}
 	break;
 	

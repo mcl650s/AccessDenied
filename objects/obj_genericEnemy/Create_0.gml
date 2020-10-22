@@ -33,3 +33,5 @@ if (mp_grid_path(global.grid, path, x, y, nextX, nextY, 1))
 	path_start(path, patrolSpeed, path_action_stop, false);	
 }
 
+alarmInstance = noone;
+

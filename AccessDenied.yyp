@@ -20,7 +20,7 @@
     {"id":{"name":"spr_killNonLethalCD","path":"sprites/spr_killNonLethalCD/spr_killNonLethalCD.yy",},"order":13,},
     {"id":{"name":"sfx_test","path":"sounds/sfx_test/sfx_test.yy",},"order":0,},
     {"id":{"name":"spr_genericWall","path":"sprites/spr_genericWall/spr_genericWall.yy",},"order":1,},
-    {"id":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"order":14,},
+    {"id":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"order":4,},
     {"id":{"name":"obj_genericPlayer","path":"objects/obj_genericPlayer/obj_genericPlayer.yy",},"order":2,},
     {"id":{"name":"obj_LUT","path":"objects/obj_LUT/obj_LUT.yy",},"order":3,},
     {"id":{"name":"scr_test","path":"scripts/scr_test/scr_test.yy",},"order":0,},
@@ -38,7 +38,7 @@
     {"id":{"name":"spr_killLethalCD","path":"sprites/spr_killLethalCD/spr_killLethalCD.yy",},"order":14,},
     {"id":{"name":"obj_guard","path":"objects/obj_guard/obj_guard.yy",},"order":2,},
     {"id":{"name":"spr_invisibleWall","path":"sprites/spr_invisibleWall/spr_invisibleWall.yy",},"order":9,},
-    {"id":{"name":"obj_invisibleWall","path":"objects/obj_invisibleWall/obj_invisibleWall.yy",},"order":4,},
+    {"id":{"name":"obj_invisibleWall","path":"objects/obj_invisibleWall/obj_invisibleWall.yy",},"order":3,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},

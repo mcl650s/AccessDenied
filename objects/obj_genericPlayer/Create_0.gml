@@ -8,3 +8,4 @@ cooldown = 150;
 killedCiv = false;
 spareGuard = false;
 alphaTemp = 0;
+moveSpeed = 3.25;

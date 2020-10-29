@@ -59,14 +59,18 @@ switch (state)
 		if (abs(round(x) - round(alarmInstance.x)) < 10 
 			&& abs(round(y) - round(alarmInstance.y + 70)) < 10)
 		{
-			if(!global.gameEnd)
+			if(!object_is_ancestor(obj_camera.follow, obj_genericEnemy))
 			{
 				obj_camera.follow = self;
-				global.gameEnd = true;
+				obj_genericPlayer.moveSpeed = 0;
+				obj_genericPlayer.alarm[0] = 200000;
+				obj_genericPlayer.alarm[1] = 200000;
 			}
+			
 			if(abs(round(x) - round(obj_camera.x)) < 10 
 				&& abs(round(y) - round(obj_camera.y)) < 10)
 			{
+				
 				obj_diamond.lost = true;
 				alarmInstance.image_index = 1;
 			}

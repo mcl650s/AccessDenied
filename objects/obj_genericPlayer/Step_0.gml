@@ -1,5 +1,3 @@
-moveSpeed = 3.25;
-
 moveX = 0;
 moveY = 0;
  

@@ -59,12 +59,13 @@ switch (state)
 		if (abs(round(x) - round(alarmInstance.x)) < 10 
 			&& abs(round(y) - round(alarmInstance.y + 70)) < 10)
 		{
-			if(!object_is_ancestor(obj_camera.follow, obj_genericEnemy))
+			if(!global.gameEnd)
 			{
 				obj_camera.follow = self;
 				obj_genericPlayer.moveSpeed = 0;
 				obj_genericPlayer.alarm[0] = 200000;
 				obj_genericPlayer.alarm[1] = 200000;
+				global.gameEnd = true;
 			}
 			
 			if(abs(round(x) - round(obj_camera.x)) < 10 

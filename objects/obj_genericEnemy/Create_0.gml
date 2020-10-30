@@ -2,16 +2,16 @@
 enum e_state
 {
 	patrol,
-	chase,
-	relax
+	chase
+	//relax
 }
 
 state = e_state.patrol;
 patrolSpeed = 1;
 chaseSpeed = 2;
-xPrev = x;
-yPrev = y;
-chilling = false;
+//xPrev = x;
+//yPrev = y;
+//chilling = false;
 
 // default implementation has the enemy stand in-place - 
 // add more patrol coordinates to create a path to follow

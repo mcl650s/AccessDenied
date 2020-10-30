@@ -77,49 +77,39 @@ switch (state)
 			}
 		}
 		// for now, do nothing else while running to alarm
-		
-		//toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
-		
-		//move(chaseSpeed, toPlayer);		
-			
-		//if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) > 256) ||
-		//	(!(angle_difference(toPlayer, eAngle) < 45) && (angle_difference(toPlayer, eAngle) > -45)))
-		//{
-		//	state = e_state.relax;
-		//}
 	}
 	break;
 	
-	case e_state.relax:
-	{
-		eAngle = direction;
+	//case e_state.relax:
+	//{
+	//	eAngle = direction;
 		
-		if (!chilling)
-		{
-			chilling = true;
-			//path_delete(path);
-			path = path_add();
+	//	if (!chilling)
+	//	{
+	//		chilling = true;
+	//		//path_delete(path);
+	//		path = path_add();
 			
-			if (mp_grid_path(global.grid, path, x, y, xPrev, yPrev, 1)) 
-			{
-				path_start(path, patrolSpeed, path_action_stop, false);	
-			}
-		}
+	//		if (mp_grid_path(global.grid, path, x, y, xPrev, yPrev, 1)) 
+	//		{
+	//			path_start(path, patrolSpeed, path_action_stop, false);	
+	//		}
+	//	}
 		
-		if (abs(round(x) - round(xPrev)) < 2 && abs(round(y) - round(yPrev)) < 2)
-		{
-			speed = 0;
-			chilling = false;
-			state = e_state.patrol;	
+	//	if (abs(round(x) - round(xPrev)) < 2 && abs(round(y) - round(yPrev)) < 2)
+	//	{
+	//		speed = 0;
+	//		chilling = false;
+	//		state = e_state.patrol;	
 			
-			path_delete(path);
-			path = path_add();
+	//		path_delete(path);
+	//		path = path_add();
 			
-			if (mp_grid_path(global.grid, path, x, y, nextX, nextY, 1)) 
-			{
-				path_start(path, patrolSpeed, path_action_stop, false);	
-			}
-		}
-	}
-	break;
+	//		if (mp_grid_path(global.grid, path, x, y, nextX, nextY, 1)) 
+	//		{
+	//			path_start(path, patrolSpeed, path_action_stop, false);	
+	//		}
+	//	}
+	//}
+	//break;
 }

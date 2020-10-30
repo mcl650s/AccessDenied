@@ -16,6 +16,7 @@ if(!scenePlayed)
 		if(alphaTemp <= 4.6)
 		{
 			draw_text(camera_get_view_width(0)/2 - string_width("Push \"J\" to kill BLUE guards")/2 + string_width("Push "), camera_get_view_height(0)/2 - string_height("Push \"J\" to kill BLUE guards")/2 - 128, "\"J\" ");	
+			draw_sprite(spr_killLethalCD, 0, camera_get_view_width(0)/2 - string_width("Push \"J\" to kill BLUE guards")/2 + string_width("Push ") + 8, camera_get_view_height(0)/2 - string_height("Push \"J\" to kill BLUE guards")/2 - 192);
 			if(alphaTemp == 4.6)
 			{
 				audio_play_sound(snd_textNoise, 1, 0);
@@ -40,6 +41,7 @@ if(!scenePlayed)
 		if(alphaTemp <= 4.0)
 		{
 			draw_text(camera_get_view_width(0)/2 - string_width("Push \"J\" to kill BLUE guards")/2 + string_width("Push \"J\" to kill "), camera_get_view_height(0)/2 - string_height("Push \"J\" to kill BLUE guards")/2 - 128, "BLUE ");	
+			draw_sprite_stretched(spr_guard, 0, camera_get_view_width(0)/2 - string_width("Push \"J\" to kill BLUE guards")/2 + string_width("Push \"J\" to kill ") + 32, camera_get_view_height(0)/2 - string_height("Push \"J\" to kill BLUE guards")/2 - 256, 64, 128);
 			if(alphaTemp == 4.0)
 			{
 				audio_play_sound(snd_textNoise, 1, 0);
@@ -96,6 +98,7 @@ if(!scenePlayed)
 		if(alphaTemp <= 2.2)
 		{
 			draw_text(camera_get_view_width(0)/2 - string_width("Push \"K\" to detain PURPLE civilians")/2 + string_width("Push "), camera_get_view_height(0)/2 - string_height("Push \"K\" to detain PURPLE civilians")/2 + 128, "\"K\" ");	
+			draw_sprite(spr_killNonLethalCD, 0, camera_get_view_width(0)/2 - string_width("Push \"K\" to detain PURPLE civilians")/2 + string_width("Push ") + 14, camera_get_view_height(0)/2 - string_height("Push \"K\" to detain PURPLE civilians")/2 + 200);
 			if(alphaTemp == 2.2)
 			{
 				audio_play_sound(snd_textNoise, 1, 0);
@@ -120,6 +123,7 @@ if(!scenePlayed)
 		if(alphaTemp <= 1.6)
 		{
 			draw_text(camera_get_view_width(0)/2 - string_width("Push \"K\" to detain PURPLE civilians")/2 + string_width("Push \"K\" to detain "), camera_get_view_height(0)/2 - string_height("Push \"K\" to detain PURPLE civilians")/2 + 128, "PURPLE ");	
+			draw_sprite_stretched(spr_civilian, 0, camera_get_view_width(0)/2 - string_width("Push \"K\" to detain PURPLE civilians")/2 + string_width("Push \"K\" to detain ") + 64, camera_get_view_height(0)/2 - string_height("Push \"K\" to detain PURPLE civilians")/2 + 192, 64, 128);
 			if(alphaTemp == 1.6)
 			{
 				audio_play_sound(snd_textNoise, 1, 0);

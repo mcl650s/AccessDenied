@@ -1,4 +1,4 @@
-if(x < 320 && y < 300)
+if(x > 4575 && y < 1085 && y > 925)
 {	
 	draw_set_alpha(alphaTemp);
 	draw_set_color(c_black);

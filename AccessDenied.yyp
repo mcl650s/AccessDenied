@@ -7,6 +7,7 @@
     {"id":{"name":"spr_civilian","path":"sprites/spr_civilian/spr_civilian.yy",},"order":5,},
     {"id":{"name":"fnt_test","path":"fonts/fnt_test/fnt_test.yy",},"order":0,},
     {"id":{"name":"spr_guard","path":"sprites/spr_guard/spr_guard.yy",},"order":6,},
+    {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},"order":3,},
     {"id":{"name":"obj_diamondCutscene","path":"objects/obj_diamondCutscene/obj_diamondCutscene.yy",},"order":18,},
     {"id":{"name":"spr_mainTileset","path":"sprites/spr_mainTileset/spr_mainTileset.yy",},"order":3,},
     {"id":{"name":"obj_civilian","path":"objects/obj_civilian/obj_civilian.yy",},"order":0,},
@@ -34,6 +35,7 @@
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":0,},
     {"id":{"name":"spr_LUT","path":"sprites/spr_LUT/spr_LUT.yy",},"order":2,},
     {"id":{"name":"snd_textNoise","path":"sounds/snd_textNoise/snd_textNoise.yy",},"order":2,},
+    {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"order":19,},
     {"id":{"name":"obj_alarm","path":"objects/obj_alarm/obj_alarm.yy",},"order":15,},
     {"id":{"name":"obj_introScene","path":"objects/obj_introScene/obj_introScene.yy",},"order":16,},
     {"id":{"name":"scr_move","path":"scripts/scr_move/scr_move.yy",},"order":1,},
@@ -58,6 +60,7 @@
     "children": [],
   },
   "RoomOrder": [
+    {"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"rm_mainLevel","path":"rooms/rm_mainLevel/rm_mainLevel.yy",},
     {"name":"rm_demoLevel","path":"rooms/rm_demoLevel/rm_demoLevel.yy",},
     {"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},

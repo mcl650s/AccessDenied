@@ -12,14 +12,14 @@ shader_reset();
 #endregion
 
 #region: Draw Colored Sprites w/ LUT Shader Applied
-gpu_set_tex_filter_ext(obj_LUT.u_lut_tex, true);
-shader_set(obj_LUT.shader);
-	shader_set_uniform_f(obj_LUT.u_strength, obj_LUT.strength);
-	texture_set_stage(obj_LUT.u_lut_tex, sprite_get_texture(spr_LUT, 0));
+//gpu_set_tex_filter_ext(obj_LUT.u_lut_tex, true);
+//shader_set(obj_LUT.shader);
+//	shader_set_uniform_f(obj_LUT.u_strength, obj_LUT.strength);
+//	texture_set_stage(obj_LUT.u_lut_tex, sprite_get_texture(spr_LUT, 0));
 	draw_sprite_part(spr_killLethalCD, 0, 0, 0, lethalCD, 64, spotX, spotY);
 	draw_sprite_part(spr_killNonLethalCD, 0, 0, 0, nonLethalCD, 64, spotX + 72, spotY);
-shader_reset();
-gpu_set_tex_filter(false);
+//shader_reset();
+//gpu_set_tex_filter(false);
 #endregion
 
 #region: Killed Civilian

@@ -12,7 +12,7 @@ if((abs(round(obj_camera.x) - moveToX) < 5) && (abs(round(obj_camera.y) - moveTo
 	alarm[2] = 50;
 }
 
-if(doorNumber == 7 && alarm[0] <= 0)
+if(doorNumber == 7 && alarm[3] <= 0)
 {
-	alarm[0] = 50;	
+	alarm[3] = 50;	
 }

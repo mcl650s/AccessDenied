@@ -2,6 +2,7 @@ varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 uniform float strength;
 uniform sampler2D lut_tex;
+uniform sampler2D post_glitch;
 
 //Variable Definitions
 //      TEX_SIZE_IN_PX 256.0
@@ -13,7 +14,8 @@ uniform sampler2D lut_tex;
 void main()
 {
     //Base Value Location
-    vec4 base_col = texture2D(gm_BaseTexture, v_vTexcoord);
+    //vec4 base_col = texture2D(gm_BaseTexture, v_vTexcoord);
+	vec4 base_col = texture2D(post_glitch, v_vTexcoord);
     float blue_cell = base_col.b * (CELLS_PER_ROW * CELLS_PER_ROW - 1.0);
 
     //Sample Coords

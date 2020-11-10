@@ -15,6 +15,7 @@
     {"id":{"name":"shd_test","path":"shaders/shd_test/shd_test.yy",},"order":0,},
     {"id":{"name":"ts_wallsAndFloors","path":"tilesets/ts_wallsAndFloors/ts_wallsAndFloors.yy",},"order":5,},
     {"id":{"name":"rm_demoLevel","path":"rooms/rm_demoLevel/rm_demoLevel.yy",},"order":1,},
+    {"id":{"name":"ts_paintings","path":"tilesets/ts_paintings/ts_paintings.yy",},"order":6,},
     {"id":{"name":"obj_genericWall","path":"objects/obj_genericWall/obj_genericWall.yy",},"order":1,},
     {"id":{"name":"shd_greyscale","path":"shaders/shd_greyscale/shd_greyscale.yy",},"order":2,},
     {"id":{"name":"bgm_test","path":"sounds/bgm_test/bgm_test.yy",},"order":1,},

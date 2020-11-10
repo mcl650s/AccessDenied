@@ -9,6 +9,5 @@ application_surface_draw_enable(false);
 
 #region BKT Glitch Init:
 glitchIntensity = 0;
-tempSurface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
 BktGlitch_init();
 #endregion

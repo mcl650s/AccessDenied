@@ -10,3 +10,7 @@ menu[0] = "Quit"
 
 menuItems = array_length(menu)
 menuCursor = 1;
+
+alarm[0] = room_speed * 5;
+
+obj_LUT.strength = 0;

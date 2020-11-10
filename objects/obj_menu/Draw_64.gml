@@ -1,22 +1,26 @@
 draw_set_font(menuFont);
 //draw_set_halign(fa_center);
 //draw_set_valign(fa_center);
+var xx = menuX;
+var yy = menuY - menuItemHeight * 3;
+var txt = "Access Denied";
+draw_set_color(c_black);
+draw_text(xx - (string_width(txt)/2), yy - string_height(txt), txt);
 
 for (var i = 0; i < menuItems; i++)
 {
-	var offset = 2;
-	var txt = menu[i];
+	//var offset = 2;
+	txt = menu[i];
 	if (menuCursor == i) 
 	{
 		txt = string_insert("> ", txt, 0);
-		var col = c_white;
+		var col = $563b8f;
 	}
 	else
 	{
-		var col = c_gray;	
+		var col = c_red;	
 	}
-	var xx = menuX;
-	var yy = menuY - (menuItemHeight * (i * 1.5));
+	yy = menuY - (menuItemHeight * (i * 1.5));
 	draw_set_color(c_black);
 	//draw_text(xx-offset, yy, txt);
 	//draw_text(xx+offset, yy, txt);

@@ -1,4 +1,8 @@
-tempSurface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
+if(!surface_exists(tempSurface))
+{
+	tempSurface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));	
+}
+
 #region BKT Glitch Shader:
 	surface_set_target(tempSurface);
 		shader_set(shdBktGlitch);

@@ -35,6 +35,7 @@
     {"id":{"name":"spr_genericPlayer","path":"sprites/spr_genericPlayer/spr_genericPlayer.yy",},"order":1,},
     {"id":{"name":"crv_test","path":"animcurves/crv_test/crv_test.yy",},"order":0,},
     {"id":{"name":"shd_LUT","path":"shaders/shd_LUT/shd_LUT.yy",},"order":1,},
+    {"id":{"name":"spr_bench","path":"sprites/spr_bench/spr_bench.yy",},"order":13,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":0,},
     {"id":{"name":"spr_LUT","path":"sprites/spr_LUT/spr_LUT.yy",},"order":2,},
     {"id":{"name":"snd_textNoise","path":"sounds/snd_textNoise/snd_textNoise.yy",},"order":2,},

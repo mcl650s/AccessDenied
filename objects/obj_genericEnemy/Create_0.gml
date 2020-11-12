@@ -2,13 +2,16 @@
 enum e_state
 {
 	patrol,
-	chase
+	chase,
+	pause
 	//relax
 }
 
 state = e_state.patrol;
 patrolSpeed = 1;
 chaseSpeed = 2;
+reactionTime = 30;
+reactionTimeCount = 0;
 //xPrev = x;
 //yPrev = y;
 //chilling = false;

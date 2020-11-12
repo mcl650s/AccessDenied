@@ -20,6 +20,8 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_LUT","path":"objects/obj_LUT/obj_LUT.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":77,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_LUT","path":"objects/obj_LUT/obj_LUT.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":32,"eventType":9,"collisionObjectId":null,"parent":{"name":"obj_LUT","path":"objects/obj_LUT/obj_LUT.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_LUT","path":"objects/obj_LUT/obj_LUT.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

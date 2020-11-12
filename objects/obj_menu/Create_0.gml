@@ -13,6 +13,8 @@ menu[0] = "Quit"
 menuItems = array_length(menu)
 menuCursor = 1;
 
+audio_sound_gain(snd_buttonClick, 0.5, 0);
+
 //obj_LUT.strength = 0;
 //alarm[0] = room_speed * 5;
 

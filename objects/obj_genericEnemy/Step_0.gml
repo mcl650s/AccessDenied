@@ -38,14 +38,30 @@ switch (state)
 			&& !collision_line(x, y, obj_genericPlayer.x, obj_genericPlayer.y, obj_genericWall, false, false))
 		{
 			alarmInstance = instance_nearest(x, y, obj_alarm);
-		
+			
 			path_delete(path);
 			path = path_add();
 		
 			if (mp_grid_path(global.grid, path, x, y, alarmInstance.x, alarmInstance.y + 70, 1))
 			{
-				path_start(path, chaseSpeed, path_action_stop, false);	
+					path_start(path, chaseSpeed, path_action_stop, false);
 			}
+			else
+			{
+				show_debug_message("BAD PATH");
+				alarmInstance = instance_nth_nearest(x, y, obj_alarm, 2);
+			
+				path_delete(path);
+				path = path_add();
+					
+				if(mp_grid_path(global.grid, path, x, y, alarmInstance.x, alarmInstance.y + 70, 1))
+				{
+					show_debug_message("PATH GOOD");
+					path_start(path, chaseSpeed, path_action_stop, false);	
+				}
+				show_debug_message("MADE IT");
+			}
+			
 		
 			state = e_state.chase;
 		}

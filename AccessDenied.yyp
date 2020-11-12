@@ -40,6 +40,7 @@
     {"id":{"name":"spr_LUT","path":"sprites/spr_LUT/spr_LUT.yy",},"order":2,},
     {"id":{"name":"snd_textNoise","path":"sounds/snd_textNoise/snd_textNoise.yy",},"order":2,},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"order":19,},
+    {"id":{"name":"scr_nth_nearest","path":"scripts/scr_nth_nearest/scr_nth_nearest.yy",},"order":4,},
     {"id":{"name":"spr_paintings","path":"sprites/spr_paintings/spr_paintings.yy",},"order":12,},
     {"id":{"name":"obj_alarm","path":"objects/obj_alarm/obj_alarm.yy",},"order":15,},
     {"id":{"name":"obj_introScene","path":"objects/obj_introScene/obj_introScene.yy",},"order":16,},

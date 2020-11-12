@@ -1,0 +1,12 @@
+patrolCoordinates[1, 0] = 574;
+patrolCoordinates[1, 1] = 1759;
+numPatrolPoints++;
+patrolCoordinates[2, 0] = 366;
+patrolCoordinates[2, 1] = 1566;
+numPatrolPoints++;
+patrolCoordinates[3, 0] = 158;
+patrolCoordinates[3, 1] = 1262;
+numPatrolPoints++;
+patrolCoordinates[4, 0] = 366;
+patrolCoordinates[4, 1] = 1262;
+numPatrolPoints++;

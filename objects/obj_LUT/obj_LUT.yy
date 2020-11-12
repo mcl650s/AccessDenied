@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Control Objects",
+    "path": "folders/Objects/Control Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_LUT",

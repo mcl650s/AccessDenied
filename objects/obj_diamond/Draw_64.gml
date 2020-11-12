@@ -1,3 +1,11 @@
+if(pickedUp && !instance_exists(obj_diamondCutscene))
+{
+	draw_set_color(c_white);
+	draw_set_font(fnt_small);
+	draw_set_alpha(1);
+	draw_text(camera_get_view_width(0)/2 - string_width("press \"SPACE\" to toggle colorblindness")/2, camera_get_view_height(0) - 64, "press \"SPACE\" to toggle colorblindness");
+}
+
 if(x > 4575 && y < 1085 && y > 925)
 {	
 	draw_set_alpha(alphaTemp);

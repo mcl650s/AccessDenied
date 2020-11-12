@@ -12,6 +12,9 @@ if(index == 9 && !solved)
 		if(i == 8)
 		{
 			solved = true;
+			show_debug_message("SOLVED");
+			instance_create_depth(x,y,0, obj_puzzleCutscene);
+			obj_puzzleCutscene.alarm[0] = 20;
 		}
 	}
 }

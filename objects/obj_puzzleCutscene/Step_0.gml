@@ -1,6 +1,5 @@
 if(cutscene)
 {
-		obj_camera.follow = self;
 		obj_genericPlayer.moveSpeed = 0;
 		obj_genericPlayer.alarm[0] = 200000;
 		obj_genericPlayer.alarm[1] = 200000;
@@ -12,7 +11,7 @@ if((abs(round(obj_camera.x) - moveToX) < 5) && (abs(round(obj_camera.y) - moveTo
 	alarm[2] = 50;
 }
 
-if(doorNumber == 5 && alarm[3] <= 0)
+if(doorNumber == 4 && alarm[3] <= 0)
 {
 	alarm[3] = 50;	
 }

@@ -24,16 +24,6 @@ switch(doorNumber)
 		instance_destroy(instance_nearest(x,y, obj_solidWall));
 		audio_play_sound(snd_buttonClick, 1, 0);
 		break;
-		
-	case 5:
-		instance_destroy(instance_nearest(x,y, obj_solidWall));
-		audio_play_sound(snd_buttonClick, 1, 0);
-		break;
-	
-	case 6:
-		instance_destroy(instance_nearest(x,y, obj_solidWall));
-		audio_play_sound(snd_buttonClick, 1, 0);
-		break;
 }
 doorNumber++;
 alarm[1] = 50;

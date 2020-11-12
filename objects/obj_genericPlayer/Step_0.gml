@@ -19,12 +19,18 @@ if moving  {
 	if(movementDir > 95 && movementDir < 265)
 	{
 		image_xscale = -1;
+		sprite_index = spr_player_walk;
 	}
 	else
 	{
 		image_xscale = 1;
+		sprite_index = spr_player_walk;
 	}
     move(moveSpeed, movementDir);
+}
+else
+{
+	sprite_index = spr_genericPlayer;	
 }
 #endregion
 

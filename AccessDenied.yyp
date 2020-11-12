@@ -10,6 +10,7 @@
     {"id":{"name":"spr_guard","path":"sprites/spr_guard/spr_guard.yy",},"order":6,},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},"order":3,},
     {"id":{"name":"obj_diamondCutscene","path":"objects/obj_diamondCutscene/obj_diamondCutscene.yy",},"order":1,},
+    {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},"order":14,},
     {"id":{"name":"spr_mainTileset","path":"sprites/spr_mainTileset/spr_mainTileset.yy",},"order":3,},
     {"id":{"name":"obj_civilian","path":"objects/obj_civilian/obj_civilian.yy",},"order":0,},
     {"id":{"name":"shd_test","path":"shaders/shd_test/shd_test.yy",},"order":0,},

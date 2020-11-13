@@ -1,6 +1,13 @@
 if(pickedUp)
 {
-	x = obj_genericPlayer.x + 10;
+	if(obj_genericPlayer.image_xscale < 0)
+	{
+		x = obj_genericPlayer.x + 10;	
+	}
+	else
+	{
+		x = obj_genericPlayer.x - 40;	
+	}
 	y = obj_genericPlayer.y + 5;
 }
 

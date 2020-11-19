@@ -54,6 +54,7 @@ switch (state)
 		{
 			if(!global.gameEnd)
 			{
+				atAlarm = true;
 				obj_camera.follow = self;
 				obj_genericPlayer.moveSpeed = 0;
 				obj_genericPlayer.alarm[0] = 200000;
@@ -65,7 +66,6 @@ switch (state)
 			if(abs(round(x) - round(obj_camera.x)) < 10 
 				&& abs(round(y) - round(obj_camera.y)) < 10)
 			{
-				
 				obj_diamond.lost = true;
 				alarmInstance.image_index = 1;
 			}

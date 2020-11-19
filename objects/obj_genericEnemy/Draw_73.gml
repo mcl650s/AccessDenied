@@ -1,3 +1,5 @@
+if (!atAlarm) 
+{
 // slight origin adjust due to animations
 if (image_xscale == -1) 
 {
@@ -41,7 +43,7 @@ else
 draw_triangle(xx, yy, xD1, yD1, xD2, yD2, false);
 // reset alpha for other drawing going on in the level
 draw_set_alpha(1);
-
+}
 
 
 

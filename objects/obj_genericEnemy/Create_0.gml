@@ -18,6 +18,7 @@ coneLength = 216;
 //inner = 60;
 //mid = 30;
 flashedRed = false;
+atAlarm = false;
 
 // default implementation has the enemy stand in-place - 
 // add more patrol coordinates to create a path to follow

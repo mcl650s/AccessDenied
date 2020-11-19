@@ -90,8 +90,8 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"rm_mainLevel","path":"rooms/rm_mainLevel/rm_mainLevel.yy",},
     {"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},
+    {"name":"rm_mainLevel","path":"rooms/rm_mainLevel/rm_mainLevel.yy",},
     {"name":"rm_demoLevel","path":"rooms/rm_demoLevel/rm_demoLevel.yy",},
     {"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},
   ],

@@ -1,4 +1,4 @@
-if(scenePlayed) ///
+if(!scenePlayed)
 {
 	draw_set_alpha(alphaTemp);
 	draw_set_color(c_black);

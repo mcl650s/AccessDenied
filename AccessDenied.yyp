@@ -17,6 +17,7 @@
     {"id":{"name":"obj_civilian","path":"objects/obj_civilian/obj_civilian.yy",},"order":0,},
     {"id":{"name":"ts_signs","path":"tilesets/ts_signs/ts_signs.yy",},"order":7,},
     {"id":{"name":"spr_signs","path":"sprites/spr_signs/spr_signs.yy",},"order":16,},
+    {"id":{"name":"spr_paintings2","path":"sprites/spr_paintings2/spr_paintings2.yy",},"order":17,},
     {"id":{"name":"shd_test","path":"shaders/shd_test/shd_test.yy",},"order":0,},
     {"id":{"name":"ts_wallsAndFloors","path":"tilesets/ts_wallsAndFloors/ts_wallsAndFloors.yy",},"order":5,},
     {"id":{"name":"rm_demoLevel","path":"rooms/rm_demoLevel/rm_demoLevel.yy",},"order":1,},

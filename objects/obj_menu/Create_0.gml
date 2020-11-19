@@ -31,3 +31,7 @@ startHeight = string_height(menu[1])
 startX = (menuX / 2) - startWidth;
 startY = menuYY + startHeight;
 // ---
+
+audio_sound_gain(bgm_mainMusic, 0, 0);
+audio_sound_gain(bgm_mainMusic, 0.25, 1000);
+audio_play_sound(bgm_mainMusic, 1, 1);

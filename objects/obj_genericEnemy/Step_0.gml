@@ -59,6 +59,7 @@ switch (state)
 				obj_genericPlayer.alarm[0] = 200000;
 				obj_genericPlayer.alarm[1] = 200000;
 				global.gameEnd = true;
+				alarm[0] = 2;
 			}
 			
 			if(abs(round(x) - round(obj_camera.x)) < 10 

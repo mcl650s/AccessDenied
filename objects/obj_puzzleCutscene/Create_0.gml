@@ -13,3 +13,5 @@ destination2y = 992;
 doorNumber = 1;
 cutscene = false;
 obj_camera.follow = self;
+
+audio_sound_gain(snd_buttonClick, 0.5, 0);

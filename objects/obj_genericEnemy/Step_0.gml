@@ -33,12 +33,14 @@ switch (state)
 		}
 		
 		toPlayer = point_direction(x, y, obj_genericPlayer.x, obj_genericPlayer.y);
-		if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) < 148) &&
+		if ((point_distance(x, y, obj_genericPlayer.x, obj_genericPlayer.y) < viewDistance) &&
 			((angle_difference(toPlayer, eAngle) < 45) && (angle_difference(toPlayer, eAngle) > -45))
 			&& !collision_line(x, y, obj_genericPlayer.x, obj_genericPlayer.y, obj_genericWall, false, false))
 		{
 			path_start(path, 0, path_action_stop, false);	
 			state = e_state.pause;
+			
+			audio_play_sound(snd_guardAlerted, 1, 0);
 		}
 	}
 	break;
@@ -77,7 +79,7 @@ switch (state)
 			reactionTimeCount += 1;
 		}
 		else
-		{
+		{			
 			alarmInstance = instance_nearest(x, y, obj_alarm);
 			
 			path_delete(path);

@@ -4,7 +4,6 @@ enum e_state
 	patrol,
 	chase,
 	pause
-	//relax
 }
 
 state = e_state.patrol;
@@ -12,9 +11,13 @@ patrolSpeed = 1;
 chaseSpeed = 2;
 reactionTime = 30;
 reactionTimeCount = 0;
-//xPrev = x;
-//yPrev = y;
-//chilling = false;
+viewDistance = 148;
+coneLength = 216;
+
+// used for drawing overlapping vision cones
+//inner = 60;
+//mid = 30;
+flashedRed = false;
 
 // default implementation has the enemy stand in-place - 
 // add more patrol coordinates to create a path to follow
@@ -36,6 +39,5 @@ if (mp_grid_path(global.grid, path, x, y, nextX, nextY, 1))
 	path_start(path, patrolSpeed, path_action_stop, false);	
 }
 
-draw_set_color(c_yellow);
 alarmInstance = noone;
 global.gameEnd = false;

@@ -42,6 +42,7 @@
     {"id":{"name":"obj_buttonYellow","path":"objects/obj_buttonYellow/obj_buttonYellow.yy",},"order":3,},
     {"id":{"name":"spr_buttonBlue","path":"sprites/spr_buttonBlue/spr_buttonBlue.yy",},"order":3,},
     {"id":{"name":"spr_closedWallHoriz","path":"sprites/spr_closedWallHoriz/spr_closedWallHoriz.yy",},"order":3,},
+    {"id":{"name":"snd_guardAlerted","path":"sounds/snd_guardAlerted/snd_guardAlerted.yy",},"order":4,},
     {"id":{"name":"spr_buttonYellow","path":"sprites/spr_buttonYellow/spr_buttonYellow.yy",},"order":3,},
     {"id":{"name":"spr_centerPuzzleCode","path":"sprites/spr_centerPuzzleCode/spr_centerPuzzleCode.yy",},"order":3,},
     {"id":{"name":"scr_test","path":"scripts/scr_test/scr_test.yy",},"order":0,},
@@ -86,8 +87,8 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"rm_mainLevel","path":"rooms/rm_mainLevel/rm_mainLevel.yy",},
+    {"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"rm_demoLevel","path":"rooms/rm_demoLevel/rm_demoLevel.yy",},
     {"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},
   ],

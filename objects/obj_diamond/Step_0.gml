@@ -10,6 +10,10 @@ if(pickedUp)
 	}
 	y = obj_genericPlayer.y + 5;
 }
+else
+{
+	depth = obj_diamondStand.depth - 1;
+}
 
 if(alphaTemp >= 3)
 {

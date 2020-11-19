@@ -20,7 +20,14 @@ if(alphaTemp >= 3)
 	room_restart();	
 }
 
-if(alphaTemp >= 1.75 && x < 320 && y < 300)
+if(alphaTemp >= 1.75 && x > 4575 && y < 1085 && y > 925)
 {
-	game_end();	
+	alphaTemp = 1.8;
+	audio_sound_gain(bgm_mainMusic, 0, 1000);
+	if(audio_sound_get_gain(bgm_mainMusic) <= 0.05)
+	{
+		audio_stop_all();
+		game_end();
+	}
+		
 }

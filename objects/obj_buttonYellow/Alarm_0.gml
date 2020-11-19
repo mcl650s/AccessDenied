@@ -4,5 +4,6 @@ if(place_meeting(x, y, obj_genericPlayer))
 }
 else
 {
-	collided = false;	
+	collided = false;
+	image_index = 0;
 }

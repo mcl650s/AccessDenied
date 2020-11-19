@@ -4,4 +4,5 @@ if(!obj_centerPuzzle.solved && !collided)
 	alarm[0] = 2;
 	obj_centerPuzzle.playerAnswer[obj_centerPuzzle.index] = "B";
 	obj_centerPuzzle.index += 1;
+	image_index = 1;
 }

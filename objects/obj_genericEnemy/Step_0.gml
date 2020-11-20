@@ -1,3 +1,9 @@
+if(global.freeze)
+{
+	path_speed = 0;
+	return;	
+}
+
 if(direction > 95 && direction < 265)
 {
 	image_xscale = -1;
@@ -10,7 +16,8 @@ else
 switch (state)
 {
 	case e_state.patrol:
-	{			
+	{		
+		path_speed = patrolSpeed;
 		eAngle = direction;
 		
 		if (abs(round(x) - round(nextX)) < 2  && abs(round(y) - round(nextY)) < 2)
@@ -47,6 +54,7 @@ switch (state)
 	
 	case e_state.chase:
 	{		
+		path_speed = chaseSpeed;
 		eAngle = direction;
 		
 		if (abs(round(x) - round(alarmInstance.x)) < 10 
@@ -60,7 +68,6 @@ switch (state)
 				obj_genericPlayer.alarm[0] = 200000;
 				obj_genericPlayer.alarm[1] = 200000;
 				global.gameEnd = true;
-				alarm[0] = 2;
 			}
 			
 			if(abs(round(x) - round(obj_camera.x)) < 10 
@@ -92,7 +99,6 @@ switch (state)
 			}
 			else
 			{
-				show_debug_message("BAD PATH");
 				alarmInstance = instance_nth_nearest(x, y, obj_alarm, 2);
 			
 				path_delete(path);
@@ -100,10 +106,8 @@ switch (state)
 					
 				if(mp_grid_path(global.grid, path, x, y, alarmInstance.x, alarmInstance.y + 70, 1))
 				{
-					show_debug_message("PATH GOOD");
 					path_start(path, chaseSpeed, path_action_stop, false);	
 				}
-				show_debug_message("MADE IT");
 			}
 			
 			state = e_state.chase;

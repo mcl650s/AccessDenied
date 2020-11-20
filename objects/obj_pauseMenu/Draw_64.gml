@@ -13,7 +13,15 @@ if (paused)
 	}
 	else
 	{
+		instance_activate_object(obj_LUT);
+		gpu_set_tex_filter_ext(obj_LUT.u_lut_tex, true);
+		shader_set(obj_LUT.shader);
+		shader_set_uniform_f(obj_LUT.u_strength, obj_LUT.strength);
+		texture_set_stage(obj_LUT.u_lut_tex, sprite_get_texture(spr_LUT, 0));
+		texture_set_stage(obj_LUT.u_glitch_tex, surface_get_texture(paused_surf));
 		draw_surface(paused_surf, 0, 0);
+		shader_reset();
+		gpu_set_tex_filter(false);
 		draw_set_alpha(0.3);
 		draw_rectangle_color(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
 		draw_set_alpha(1);

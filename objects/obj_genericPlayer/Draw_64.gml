@@ -79,14 +79,14 @@ if(spareGuard)
 	{
 		draw_set_color(c_white);
 		draw_set_font(fnt_test);
-		draw_text(camera_get_view_width(0)/2 - string_width("NO MERCY")/2, camera_get_view_height(0)/2 - string_height("NO MERCY")/2, "NO ");
+		draw_text(camera_get_view_width(0)/2 - string_width("KILL GUARDS")/2, camera_get_view_height(0)/2 - string_height("KILL GUARDS")/2, "KILL ");
 		if(alphaTemp == 1)
 		{
 			audio_play_sound(snd_textNoise, 1, 0);
 		}
 		if(alphaTemp >= 1.25)
 		{
-			draw_text(camera_get_view_width(0)/2 - string_width("NO MERCY")/2 + string_width("NO "), camera_get_view_height(0)/2 - string_height("NO MERCY")/2, "MERCY");	
+			draw_text(camera_get_view_width(0)/2 - string_width("KILL GUARDS")/2 + string_width("KILL "), camera_get_view_height(0)/2 - string_height("KILL GUARDS")/2, "GUARDS");	
 			if(alphaTemp == 1.25)
 			{
 				audio_play_sound(snd_textNoise, 1, 0);

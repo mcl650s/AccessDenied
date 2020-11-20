@@ -22,3 +22,4 @@ destination4y = 285;
 
 doorNumber = 1;
 cutscene = false;
+global.freeze = true;

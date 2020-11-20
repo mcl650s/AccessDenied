@@ -42,3 +42,4 @@ if (mp_grid_path(global.grid, path, x, y, nextX, nextY, 1))
 
 alarmInstance = noone;
 global.gameEnd = false;
+global.freeze = false;

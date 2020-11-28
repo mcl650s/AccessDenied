@@ -91,6 +91,7 @@ if (menuControl)
 			{
 				audio_play_sound(snd_buttonClick, 1, 0);
 				menuCommitted = -1;
+				obj_LUT.strength = 0;
 				room_goto(rm_menu);
 			
 				break;	

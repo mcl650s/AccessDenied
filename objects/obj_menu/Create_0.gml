@@ -32,6 +32,9 @@ startX = (menuX / 2) - startWidth;
 startY = menuYY + startHeight;
 // ---
 
-audio_sound_gain(bgm_mainMusic, 0, 0);
-audio_sound_gain(bgm_mainMusic, 0.25, 1000);
-audio_play_sound(bgm_mainMusic, 1, 1);
+if(!audio_is_playing(bgm_mainMusic))
+{
+	audio_sound_gain(bgm_mainMusic, 0, 0);
+	audio_sound_gain(bgm_mainMusic, 0.25, 1000);
+	audio_play_sound(bgm_mainMusic, 1, 1);
+}

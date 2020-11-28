@@ -1,3 +1,8 @@
+if(global.gameEnd)
+{
+	global.freeze = true;	
+}
+
 if(global.freeze)
 {
 	path_speed = 0;
@@ -67,14 +72,9 @@ switch (state)
 				obj_genericPlayer.moveSpeed = 0;
 				obj_genericPlayer.alarm[0] = 200000;
 				obj_genericPlayer.alarm[1] = 200000;
+				alarmInstance.guardX = x;
+				alarmInstance.guardY = y;
 				global.gameEnd = true;
-			}
-			
-			if(abs(round(x) - round(obj_camera.x)) < 10 
-				&& abs(round(y) - round(obj_camera.y)) < 10)
-			{
-				obj_diamond.lost = true;
-				alarmInstance.image_index = 1;
 			}
 		}
 	}

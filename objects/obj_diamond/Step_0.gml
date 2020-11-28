@@ -27,7 +27,6 @@ if(alphaTemp >= 1.75 && x > 4575 && y < 1085 && y > 925)
 	if(audio_sound_get_gain(bgm_mainMusic) <= 0.05)
 	{
 		audio_stop_all();
-		game_end();
+		room_goto(rm_credits);
 	}
-		
 }

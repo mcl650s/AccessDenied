@@ -31,7 +31,7 @@ names[2, 1] = "Horvath";
 
 roles[2, 0] = "Gameplay Programmer";
 roles[2, 1] = "AI Engineer";
-roles[2, 2] = "FILL IN ROLE TITLE";
+roles[2, 2] = "Menu Creator";
 
 joke[2] = "Artificial Intelligence Intelligence";
 

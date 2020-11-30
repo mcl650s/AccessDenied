@@ -8,10 +8,11 @@ menuControl = true;
 offset = 2;
 
 menu[1] = "Start";
+//menu[1] = "Load"
 menu[0] = "Quit";
 
 menuItems = array_length(menu);
-menuCursor = 1;;
+menuCursor = 1;
 
 audio_sound_gain(snd_buttonClick, 0.5, 0);
 

@@ -74,7 +74,38 @@ if (menuControl)
 	{
 		switch (menuCommitted)
 		{
-			case 1:
+			//case 3:
+			//{
+			//	paused = !paused;
+			//	if (!paused)
+			//	{
+			//		instance_activate_all();
+			//		surface_free(paused_surf);
+			//		paused_surf = -1;
+			//	}
+			//	menuCommitted = -1;
+			
+			//	break;
+			//}
+			//case 2:
+			//{
+			//	// save current game state...
+				
+			//	//var _saveData = array_create(0);
+				
+			//	//objs[0] = obj_camera; objs[1] = obj_centerPuzzle;
+				
+			//	// for every instance, create a struct and add it to the array
+				
+			//	instance_activate_all();
+			//	saveGame();
+			//	instance_deactivate_all(true);	
+				
+			//	menuControl = true;
+				
+			//	break;
+			//}
+			case 1: 
 			{
 				paused = !paused;
 				if (!paused)

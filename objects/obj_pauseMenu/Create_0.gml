@@ -8,6 +8,8 @@ menuControl = false;
 offset = 2;
 
 menu[1] = "Continue";
+//menu[2] = "Save";
+//menu[1] = "Load";
 menu[0] = "Main Menu";
 
 menuItems = array_length(menu);

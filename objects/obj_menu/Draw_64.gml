@@ -1,6 +1,6 @@
 draw_set_font(menuFont);
 var xx = menuX;
-var yy = menuY - menuItemHeight * 3;
+var yy = menuY - menuItemHeight * 5;
 
 // draw title
 var txt = "Access Denied";

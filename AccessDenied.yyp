@@ -31,6 +31,7 @@
     {"id":{"name":"spr_alarm","path":"sprites/spr_alarm/spr_alarm.yy",},"order":10,},
     {"id":{"name":"obj_genericEnemy","path":"objects/obj_genericEnemy/obj_genericEnemy.yy",},"order":1,},
     {"id":{"name":"seq_test","path":"sequences/seq_test/seq_test.yy",},"order":0,},
+    {"id":{"name":"spr_statues","path":"sprites/spr_statues/spr_statues.yy",},"order":21,},
     {"id":{"name":"bgm_mainMusic","path":"sounds/bgm_mainMusic/bgm_mainMusic.yy",},"order":4,},
     {"id":{"name":"spr_killNonLethalCD","path":"sprites/spr_killNonLethalCD/spr_killNonLethalCD.yy",},"order":7,},
     {"id":{"name":"sfx_test","path":"sounds/sfx_test/sfx_test.yy",},"order":0,},

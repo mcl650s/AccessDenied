@@ -23,7 +23,7 @@ for (var i = 0; i < menuItems; i++)
 	}
 	else
 	{
-		var col = c_gray;	
+		var col = c_dkgray;	
 	}
 	yy = menuY - (menuItemHeight * (i * 1.5));
 	draw_set_color(c_black);

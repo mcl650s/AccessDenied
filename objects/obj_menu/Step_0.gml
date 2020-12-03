@@ -62,6 +62,7 @@ if (menuCommitted != -1)
 		case 1:
 		{
 			audio_play_sound(snd_buttonClick, 1, 0);
+			obj_LUT.glitchIntensity = 0.8;
 			room_goto(rm_mainLevel);
 			break;
 		}

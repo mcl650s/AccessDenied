@@ -12,3 +12,9 @@ glitchIntensity = 0;
 BktGlitch_init();
 tempSurface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
 #endregion
+
+#region Main Menu:
+intensityChange = 0.005;
+grow = true;
+alarm[1] = 50;
+#endregion

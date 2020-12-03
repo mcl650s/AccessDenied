@@ -49,6 +49,7 @@
     {"id":{"name":"spr_buttonYellow","path":"sprites/spr_buttonYellow/spr_buttonYellow.yy",},"order":3,},
     {"id":{"name":"spr_centerPuzzleCode","path":"sprites/spr_centerPuzzleCode/spr_centerPuzzleCode.yy",},"order":3,},
     {"id":{"name":"scr_test","path":"scripts/scr_test/scr_test.yy",},"order":0,},
+    {"id":{"name":"spr_plants","path":"sprites/spr_plants/spr_plants.yy",},"order":20,},
     {"id":{"name":"spr_diamond","path":"sprites/spr_diamond/spr_diamond.yy",},"order":9,},
     {"id":{"name":"ts_test","path":"tilesets/ts_test/ts_test.yy",},"order":0,},
     {"id":{"name":"spr_genericPlayer","path":"sprites/spr_genericPlayer/spr_genericPlayer.yy",},"order":1,},

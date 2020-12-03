@@ -7,6 +7,10 @@ draw_set_font(fnt_creditsBig);
 
 if(timer >= startTime)
 {
+	if(index > 3)
+	{
+		room_goto(rm_menu);
+	}
 	draw_text(128,96, names[index, 0]);
 }
 if(timer == startTime)
@@ -66,9 +70,5 @@ if(timer >= startTime + 300)
 {
 	timer = 0;
 	index++;
-	if(index > 3)
-	{
-		room_goto(rm_menu);
-	}
 }
 timer++;

@@ -42,8 +42,8 @@ names[3, 1] = "Nielson";
 
 roles[3, 0] = "Character Artist";
 roles[3, 1] = "Character Animator";
-roles[3, 2] = "FILL IN ROLE TITLE";
+roles[3, 2] = "Statue Design";
 
-joke[3] = "FILL IN JOKE ROLE";
+joke[3] = "Digital Donatello";
 
 ///////////////////////////////////////////////////

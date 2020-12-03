@@ -75,7 +75,7 @@ function BktGlitch_init() {
 		buffer_write(_buffer, buffer_u64, irandom(0xffffffff) | (irandom(0xffffffff) << 32));	
 	}
 	var _surface = surface_create(NOISE_TEXTURE_SIZE, NOISE_TEXTURE_SIZE);
-	buffer_set_surface(_buffer, _surface, 0, 0, 0);
+	buffer_set_surface(_buffer, _surface, 0);
 	global.bktGlitchNoise = sprite_get_texture(sprite_create_from_surface(_surface, 0, 0, NOISE_TEXTURE_SIZE, NOISE_TEXTURE_SIZE, false, false, 0, 0), 0);
 	surface_free(_surface);
 	buffer_delete(_buffer);

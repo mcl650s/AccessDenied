@@ -11,7 +11,10 @@ if(timer >= startTime)
 	{
 		room_goto(rm_menu);
 	}
-	draw_text(128,96, names[index, 0]);
+	else
+	{
+		draw_text(128,96, names[index, 0]);
+	}
 }
 if(timer == startTime)
 {

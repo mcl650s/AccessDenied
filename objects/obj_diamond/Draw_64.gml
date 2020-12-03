@@ -17,14 +17,14 @@ if(x > 4575 && y < 1085 && y > 925)
 	{
 		draw_set_color(c_white);
 		draw_set_font(fnt_test);
-		draw_text(camera_get_view_width(0)/2 - string_width("You Win!")/2, camera_get_view_height(0)/2 - string_height("You Win!")/2, "You ");
+		draw_text(camera_get_view_width(0)/2 - string_width("Good Escape")/2, camera_get_view_height(0)/2 - string_height("Good Escape")/2, "Good ");
 		if(alphaTemp == 1)
 		{
 			audio_play_sound(snd_textNoise, 1, 0);
 		}
 		if(alphaTemp >= 1.2)
 		{
-			draw_text(camera_get_view_width(0)/2 - string_width("You Win!")/2 + string_width("You "), camera_get_view_height(0)/2 - string_height("You Win!")/2, "Win!");	
+			draw_text(camera_get_view_width(0)/2 - string_width("Good Escape")/2 + string_width("Good "), camera_get_view_height(0)/2 - string_height("Good Escape")/2, "Escape");	
 			if(alphaTemp == 1.2)
 			{
 				audio_play_sound(snd_textNoise, 1, 0);

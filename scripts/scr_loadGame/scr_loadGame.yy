@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "saveStringToFile",
+  "name": "scr_loadGame",
   "tags": [],
   "resourceType": "GMScript",
 }

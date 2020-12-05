@@ -3,11 +3,7 @@ moveY = 0;
  
 if (keyboard_check_pressed(ord("N")))
 {
-	set_checkpoint();
-}
-if (keyboard_check_pressed(ord("M")))
-{
-	get_checkpoint();
+	instance_create_depth(0, 0, 0, obj_keypadFullscreen);
 }
  
 #region: Key Checking
@@ -45,5 +41,8 @@ else
 
 if(alphaTemp >= 3)
 {
+	killedCiv = false;
+	spareGuard = false;
+	alphaTemp = 0;
 	get_checkpoint();
 }

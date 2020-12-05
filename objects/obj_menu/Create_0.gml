@@ -15,13 +15,11 @@ menuItems = array_length(menu);
 menuCursor = 1;
 
 instrX = display_get_gui_width() / 2;
-instrY = display_get_gui_height() / 1.2;
+instrY = display_get_gui_height() / 1.4;
 instrFont = fnt_small; /// update
 instrItemHeight = font_get_size(fnt_small) / 2; /// update
-instr[9] = "Your mission, if you choose to accept it, is to";
-instr[8] = "locate the Postmodern Muesuem's cherished Caeruleum";
-instr[7] = "Diamond, steal it, and escape without alerting the";
-instr[6] = "various attendees inside.";
+instr[7] = "Your mission, if you choose to accept it, is to locate the Postmodern Muesuem's cherished";
+instr[6] = "Caeruleum Diamond, steal it, and escape without alerting the various attendees inside.";
 instr[5] = "-";
 instr[4] = "Movement - W, A, S, D";
 instr[3] = "Attack - J, K";

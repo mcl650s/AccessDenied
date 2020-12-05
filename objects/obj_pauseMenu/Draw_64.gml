@@ -37,7 +37,7 @@ if (paused)
 		draw_text(xx - (string_width(txt)/2) + offset, yy - string_height(txt), txt);
 		draw_text(xx - (string_width(txt)/2), yy - string_height(txt) - offset, txt);
 		draw_text(xx - (string_width(txt)/2), yy - string_height(txt) + offset, txt);
-		draw_set_color(c_aqua);
+		draw_set_color(c_red);
 		draw_text(xx - (string_width(txt)/2), yy - string_height(txt), txt);
 
 		// draw menu options

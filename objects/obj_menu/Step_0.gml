@@ -1,4 +1,12 @@
-if (menuControl) 
+if (instructView)
+{
+	if (keyboard_check_pressed(vk_escape))
+	{
+		instructView = false;
+		menuControl = true;
+	}
+}
+else if (menuControl) 
 {
 	// keyboard select
 	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")))
@@ -8,7 +16,7 @@ if (menuControl)
 		{
 			menuCursor = 0;	
 		}
-		window_mouse_set(menuX, menuY+200);
+		window_mouse_set(menuX * 2 - 25, menuY * 1.5 - 25);
 	}
 	if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")))
 	{
@@ -17,7 +25,7 @@ if (menuControl)
 		{
 			menuCursor = menuItems - 1;	
 		}
-		window_mouse_set(menuX, menuY+200);
+		window_mouse_set(menuX * 2 - 25, menuY * 1.5 - 25);
 	}
 	if (keyboard_check_pressed(vk_enter))
 	{
@@ -53,6 +61,14 @@ if (menuCommitted != -1)
 {
 	switch (menuCommitted)
 	{
+		case 2:
+		{
+			audio_play_sound(snd_buttonClick, 1, 0);
+			instructView = true;
+			menuCommitted = -1;
+			menuControl = false;
+			break;
+		}
 		case 1:
 		{
 			audio_play_sound(snd_buttonClick, 1, 0);

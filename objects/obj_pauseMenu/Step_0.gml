@@ -1,4 +1,4 @@
-if (keyboard_check_pressed(ord("P"))) 
+if (keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_escape)) 
 {
 	paused = !paused;
 	if (!paused)

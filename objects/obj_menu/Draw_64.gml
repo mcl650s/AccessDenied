@@ -3,7 +3,7 @@ var xx = menuX;
 var yy = menuY - menuItemHeight * 3;
 
 // draw title
-var txt = "Access Denied";
+var txt = "";
 draw_set_color(c_white);
 draw_text(xx - (string_width(txt)/2) - offset, yy - string_height(txt), txt);
 draw_text(xx - (string_width(txt)/2) + offset, yy - string_height(txt), txt);

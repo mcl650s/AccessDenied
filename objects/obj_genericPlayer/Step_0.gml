@@ -1,11 +1,6 @@
 moveX = 0;
 moveY = 0;
  
-if (keyboard_check_pressed(ord("N")))
-{
-	instance_create_depth(0, 0, 0, obj_keypadFullscreen);
-}
- 
 #region: Key Checking
 for ( var i = 0; i < array_length_1d(movement_inputs); i++){
     keyPressed = movement_inputs[i];

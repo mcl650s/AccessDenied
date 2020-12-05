@@ -53,7 +53,6 @@ if (paused)
 				var col = c_ltgray;	
 			}
 			yy = menuY - (menuItemHeight * (i * 1.5));
-			draw_set_color(c_black);
 			draw_set_color(col);
 			if (menuCursor == i)
 			{

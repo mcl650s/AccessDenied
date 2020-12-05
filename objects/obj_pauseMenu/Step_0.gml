@@ -45,29 +45,29 @@ if (menuControl)
 		menuControl = false;
 	}
 	
-
-	//mX = window_mouse_get_x();
-	//mY = window_mouse_get_y();
+	// mouse select
+	mouseX = window_mouse_get_x();
+	mouseY = window_mouse_get_y();
 	
-	////  mouse select
-	//if (mX > quitX && mX < quitX + quitWidth*5) {
-	//	if (mY > quitY && mY < quitY + quitHeight*2) {
-	//		menuCursor = 0;
-	//		if (mouse_check_button_pressed(mb_left)) {
-	//			menuCommitted = menuCursor;
-	//			menuControl = false;
-	//		}
-	//	}
-	//}
-	//if (mX > continueX && mX < continueX + continueWidth*5) {
-	//	if (mY > continueY && mY < continueY + continueHeight*2) {
-	//		menuCursor = 1;
-	//		if (mouse_check_button_pressed(mb_left)) {
-	//			menuCommitted = menuCursor;
-	//			menuControl = false;
-	//		}
-	//	}
-	//}
+	show_debug_message("MX: " + string(mouseX) + " MY: " + string(mouseY));
+	show_debug_message("quitX: " + string(quitX) + " quitY: " + string(quitY));
+	
+	if (mouseX > quitX && mouseX < quitX*2 && 
+		mouseY > quitY && mouseY < quitY*1.5) {
+		menuCursor = 0;
+		if (mouse_check_button_pressed(mb_left)) {
+			menuCommitted = menuCursor;
+			menuControl = false;
+		}
+	}
+	if (mouseX > continueX && mouseX < continueX*2 && 
+		mouseY > continueY && mouseY < continueY*1.5) {
+		menuCursor = 1;
+		if (mouse_check_button_pressed(mb_left)) {
+			menuCommitted = menuCursor;
+			menuControl = false;
+		}
+	}
 	
 	// a menu option was selected
 	if (menuCommitted != -1)

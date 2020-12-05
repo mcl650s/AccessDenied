@@ -15,16 +15,16 @@ menuCursor = 1;
 
 // --- used for detecting mouse selection
 menuYY = menuY - (menuItemHeight * 3);
-quitWidth = string_width(menu[0]);
-quitHeight = string_height(menu[0]);
-quitX = menuX - quitWidth - 150;
-quitY = menuYY + quitHeight + 100;
+quitWidth = 238;
+quitHeight = 78;
+quitX = menuX - quitWidth / 1.30;
+quitY = menuYY + quitHeight*1.25;
 
 menuYY = menuYY - (menuItemHeight * 1.5);
-continueWidth = string_width(menu[1]);
-continueHeight = string_height(menu[1])
-continueX = menuX - continueWidth - 100;
-continueY = menuYY + continueHeight + 100;
+continueWidth = 304;
+continueHeight = 78;
+continueX = menuX - continueWidth / 1.30;
+continueY = menuYY + continueHeight / 1.25;
 // ---
 
 paused = false;

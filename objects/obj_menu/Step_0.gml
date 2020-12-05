@@ -4,7 +4,30 @@ if (instructView)
 	{
 		instructView = false;
 		menuControl = true;
+		menuCursor = 1;
 	}
+	// mouse select
+	mouseX = window_mouse_get_x();
+	mouseY = window_mouse_get_y();
+	
+	if (mouseX > 480 && mouseX < 810 && 
+		mouseY > 500 && mouseY < 540) {
+		instr[0] = "> Return to the main menu";
+		if (mouse_check_button_pressed(mb_left)) {
+			instructView = false;
+			menuControl = true;
+			menuCursor = 1;
+			instr[0] = "Return to the main menu";
+			audio_play_sound(snd_buttonClick, 1, 0);
+		}
+	}
+	else
+	{
+		instr[0] = "Return to the main menu";
+	}
+	
+	//show_debug_message("MX: " + string(mouseX) + " MY: " + string(mouseY));
+	//show_debug_message("quitX: " + string(quitX) + " quitY: " + string(quitY));
 }
 else if (menuControl) 
 {
@@ -32,28 +55,34 @@ else if (menuControl)
 		menuCommitted = menuCursor;
 		menuControl = false;
 	}
+	// mouse select
+	mouseX = window_mouse_get_x();
+	mouseY = window_mouse_get_y();
 	
-	////show_debug_message("MX: " + string(mX) + " MY: " + string(mY));
-	//show_debug_message("quitX: " + string(quitX) + " quitY: " + string(quitY));
-	////  mouse select
-	//if (mouse_x > quitX && mouse_x < quitX + quitWidth*2) {
-	//	if (mouse_y > quitY && mouse_y < quitY + quitHeight*2) {
-	//		menuCursor = 0;
-	//		if (mouse_check_button_pressed(mb_left)) {
-	//			menuCommitted = menuCursor;
-	//			menuControl = false;
-	//		}
-	//	}
-	//}
-	//if (mouse_x > startX && mouse_x < startX + startWidth*2) {
-	//	if (mouse_y > startY && mouse_y < startY + startHeight*2) {
-	//		menuCursor = 1;
-	//		if (mouse_check_button_pressed(mb_left)) {
-	//			menuCommitted = menuCursor;
-	//			menuControl = false;
-	//		}
-	//	}
-	//}
+	if (mouseX > quitX && mouseX < quitX*1.3 && 
+		mouseY > quitY && mouseY < quitY*1.15) {
+		menuCursor = 0;
+		if (mouse_check_button_pressed(mb_left)) {
+			menuCommitted = menuCursor;
+			menuControl = false;
+		}
+	}
+	if (mouseX > startX && mouseX < startX*1.3 && 
+		mouseY > startY && mouseY < startY*1.5) {
+		menuCursor = 1;
+		if (mouse_check_button_pressed(mb_left)) {
+			menuCommitted = menuCursor;
+			menuControl = false;
+		}
+	}
+	if (mouseX > howX && mouseX < howX*1.9 && 
+		mouseY > howY && mouseY < howY*1.5) {
+		menuCursor = 2;
+		if (mouse_check_button_pressed(mb_left)) {
+			menuCommitted = menuCursor;
+			menuControl = false;
+		}
+	}
 }
 
 // a menu option was selected

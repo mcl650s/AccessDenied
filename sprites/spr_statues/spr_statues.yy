@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"468284f4-0d4a-4156-b422-7108d7c09fa5","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Tilesets",
+    "path": "folders/Sprites/Tilesets.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_statues",

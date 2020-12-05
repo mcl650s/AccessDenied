@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 32,
-  "bbox_right": 220,
-  "bbox_top": 0,
-  "bbox_bottom": 49,
+  "bbox_left": 2,
+  "bbox_right": 127,
+  "bbox_top": 10,
+  "bbox_bottom": 95,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 256,
-  "height": 265,
+  "width": 128,
+  "height": 128,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1dab3100-e525-4fdc-80d1-5eec613da46c","path":"sprites/spr_signs/spr_signs.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1dab3100-e525-4fdc-80d1-5eec613da46c","path":"sprites/spr_signs/spr_signs.yy",},"LayerId":{"name":"9c8757fc-c876-4c07-8fcb-a12a3e7cb9e0","path":"sprites/spr_signs/spr_signs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_signs","path":"sprites/spr_signs/spr_signs.yy",},"resourceVersion":"1.0","name":"1dab3100-e525-4fdc-80d1-5eec613da46c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0132aa32-cd63-4434-bd73-69871e858dd3","path":"sprites/spr_bathroomTiles/spr_bathroomTiles.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0132aa32-cd63-4434-bd73-69871e858dd3","path":"sprites/spr_bathroomTiles/spr_bathroomTiles.yy",},"LayerId":{"name":"6f2327db-0934-4e04-80a3-7387d79128fe","path":"sprites/spr_bathroomTiles/spr_bathroomTiles.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_bathroomTiles","path":"sprites/spr_bathroomTiles/spr_bathroomTiles.yy",},"resourceVersion":"1.0","name":"0132aa32-cd63-4434-bd73-69871e858dd3","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_signs","path":"sprites/spr_signs/spr_signs.yy",},
+    "spriteId": {"name":"spr_bathroomTiles","path":"sprites/spr_bathroomTiles/spr_bathroomTiles.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f6b3548c-4631-4953-bb8c-b719721214ba","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1dab3100-e525-4fdc-80d1-5eec613da46c","path":"sprites/spr_signs/spr_signs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f6ec5d5c-c4dc-4bfe-8223-3244a3e7bb5a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0132aa32-cd63-4434-bd73-69871e858dd3","path":"sprites/spr_bathroomTiles/spr_bathroomTiles.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_signs","path":"sprites/spr_signs/spr_signs.yy",},
+    "parent": {"name":"spr_bathroomTiles","path":"sprites/spr_bathroomTiles/spr_bathroomTiles.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_signs",
+    "name": "spr_bathroomTiles",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9c8757fc-c876-4c07-8fcb-a12a3e7cb9e0","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6f2327db-0934-4e04-80a3-7387d79128fe","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Tilesets",
     "path": "folders/Sprites/Tilesets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_signs",
+  "name": "spr_bathroomTiles",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"771a1be4-6c0b-4924-bfdc-be7a8352c2f5","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "PuzzleKeyPad",
+    "path": "folders/Sprites/PuzzleKeyPad.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_keypad",

@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 9,
-  "bbox_top": 0,
-  "bbox_bottom": 15,
+  "bbox_right": 4,
+  "bbox_top": 1,
+  "bbox_bottom": 7,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 10,
-  "height": 16,
+  "width": 5,
+  "height": 9,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"aca5aa2b-608f-4ef7-8e7d-568e436a768f","path":"sprites/spr_keypadWall/spr_keypadWall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aca5aa2b-608f-4ef7-8e7d-568e436a768f","path":"sprites/spr_keypadWall/spr_keypadWall.yy",},"LayerId":{"name":"cc1f98e9-0cb7-45c7-b62b-a5a01bdb918e","path":"sprites/spr_keypadWall/spr_keypadWall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_keypadWall","path":"sprites/spr_keypadWall/spr_keypadWall.yy",},"resourceVersion":"1.0","name":"aca5aa2b-608f-4ef7-8e7d-568e436a768f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fac91a8e-355b-4cf7-8544-f63ffc3f8d74","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fac91a8e-355b-4cf7-8544-f63ffc3f8d74","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},"LayerId":{"name":"3dc754ec-a2f5-4375-bbed-805410fd53f8","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_puzzleFour","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},"resourceVersion":"1.0","name":"fac91a8e-355b-4cf7-8544-f63ffc3f8d74","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_keypadWall","path":"sprites/spr_keypadWall/spr_keypadWall.yy",},
+    "spriteId": {"name":"spr_puzzleFour","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f5f79b1a-a292-4ad1-8bea-f4d6b42b3c50","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aca5aa2b-608f-4ef7-8e7d-568e436a768f","path":"sprites/spr_keypadWall/spr_keypadWall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"efe23d77-bdde-460b-953e-414f93b5ae7b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fac91a8e-355b-4cf7-8544-f63ffc3f8d74","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_keypadWall","path":"sprites/spr_keypadWall/spr_keypadWall.yy",},
+    "parent": {"name":"spr_puzzleFour","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_keypadWall",
+    "name": "spr_puzzleFour",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cc1f98e9-0cb7-45c7-b62b-a5a01bdb918e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3dc754ec-a2f5-4375-bbed-805410fd53f8","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "PuzzleKeyPad",
     "path": "folders/Sprites/PuzzleKeyPad.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_keypadWall",
+  "name": "spr_puzzleFour",
   "tags": [],
   "resourceType": "GMSprite",
 }

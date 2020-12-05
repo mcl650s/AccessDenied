@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8932dff3-3bb7-4ae1-aaa2-b1d76b2653be","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Tilesets",
+    "path": "folders/Sprites/Tilesets.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_plants",

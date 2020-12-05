@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_right": 4,
   "bbox_top": 0,
-  "bbox_bottom": 63,
+  "bbox_bottom": 8,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 5,
+  "height": 9,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8eadd5cc-1fb6-434f-84fd-9959aad19345","path":"sprites/spr_invisibleLine/spr_invisibleLine.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8eadd5cc-1fb6-434f-84fd-9959aad19345","path":"sprites/spr_invisibleLine/spr_invisibleLine.yy",},"LayerId":{"name":"aef19686-873c-47a2-a9cc-d8b2f3884178","path":"sprites/spr_invisibleLine/spr_invisibleLine.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_invisibleLine","path":"sprites/spr_invisibleLine/spr_invisibleLine.yy",},"resourceVersion":"1.0","name":"8eadd5cc-1fb6-434f-84fd-9959aad19345","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7cf27d44-aa40-4a7c-ac9b-330098ea3e79","path":"sprites/spr_puzzleEight/spr_puzzleEight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7cf27d44-aa40-4a7c-ac9b-330098ea3e79","path":"sprites/spr_puzzleEight/spr_puzzleEight.yy",},"LayerId":{"name":"b4879bf4-593b-4d7c-b461-adb043f25fbf","path":"sprites/spr_puzzleEight/spr_puzzleEight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_puzzleEight","path":"sprites/spr_puzzleEight/spr_puzzleEight.yy",},"resourceVersion":"1.0","name":"7cf27d44-aa40-4a7c-ac9b-330098ea3e79","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_invisibleLine","path":"sprites/spr_invisibleLine/spr_invisibleLine.yy",},
+    "spriteId": {"name":"spr_puzzleEight","path":"sprites/spr_puzzleEight/spr_puzzleEight.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8158f0eb-a04a-4090-8e86-30f74d587be5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8eadd5cc-1fb6-434f-84fd-9959aad19345","path":"sprites/spr_invisibleLine/spr_invisibleLine.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b3670660-21f3-45f9-bcff-518a7ad250c2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7cf27d44-aa40-4a7c-ac9b-330098ea3e79","path":"sprites/spr_puzzleEight/spr_puzzleEight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_invisibleLine","path":"sprites/spr_invisibleLine/spr_invisibleLine.yy",},
+    "parent": {"name":"spr_puzzleEight","path":"sprites/spr_puzzleEight/spr_puzzleEight.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_invisibleLine",
+    "name": "spr_puzzleEight",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"aef19686-873c-47a2-a9cc-d8b2f3884178","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b4879bf4-593b-4d7c-b461-adb043f25fbf","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Enemies.yy",
+    "name": "PuzzleKeyPad",
+    "path": "folders/Sprites/PuzzleKeyPad.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_invisibleLine",
+  "name": "spr_puzzleEight",
   "tags": [],
   "resourceType": "GMSprite",
 }

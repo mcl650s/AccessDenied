@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3a427668-397c-4282-ba9a-0bc426b6bd0c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "PuzzleColorPattern",
+    "path": "folders/Sprites/PuzzleColorPattern.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_buttonYellow",

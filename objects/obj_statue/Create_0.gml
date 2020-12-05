@@ -1,5 +1,8 @@
-moved = false;
 left = true;
-xCount = 0;
+moved = false;
 done = false;
+once = false;
+
+xCount = 0;
 in = noone;
+

@@ -25,7 +25,8 @@ else if (moved && !left && !done)
 	}
 }
 
-if (done) 
+if (done && !once) 
 {
 	instance_create_depth(x, y, 0, obj_genericWall);	
+	once = true;
 }

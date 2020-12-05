@@ -28,7 +28,7 @@ if (paused)
 		
 		draw_set_font(menuFont);
 		var xx = menuX;
-		var yy = menuY - menuItemHeight * 6;
+		var yy = menuY - menuItemHeight * 3;
 
 		// draw title
 		var txt = "Paused";

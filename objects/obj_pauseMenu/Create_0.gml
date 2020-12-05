@@ -7,13 +7,11 @@ menuControl = false;
 
 offset = 2;
 
-menu[3] = "Continue";
-menu[2] = "Save";
-menu[1] = "Load";
+menu[1] = "Continue";
 menu[0] = "Main Menu";
 
 menuItems = array_length(menu);
-menuCursor = 3;
+menuCursor = 1;
 
 // --- used for detecting mouse selection
 menuYY = menuY - (menuItemHeight * 3);

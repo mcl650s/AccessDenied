@@ -74,38 +74,12 @@ if (menuControl)
 	{
 		switch (menuCommitted)
 		{
-			case 3:
+			case 1:
 			{
 				paused = !paused;
 				if (!paused)
 				{
 					instance_activate_all();
-					surface_free(paused_surf);
-					paused_surf = -1;
-				}
-				menuCommitted = -1;
-			
-				break;
-			}
-			case 2:
-			{
-				// save current game state...				
-				instance_activate_all();
-				saveGame();
-				instance_deactivate_all(true);	
-				
-				menuCommitted = -1;
-				menuControl = true;
-				
-				break;
-			}
-			case 1: 
-			{
-				paused = !paused;
-				if (!paused)
-				{
-					instance_activate_all();
-					loadGame();
 					surface_free(paused_surf);
 					paused_surf = -1;
 				}

@@ -7,12 +7,11 @@ menuControl = true;
 
 offset = 2;
 
-menu[2] = "Start";
-menu[1] = "Load"
+menu[1] = "Start";
 menu[0] = "Quit";
 
 menuItems = array_length(menu);
-menuCursor = 2;
+menuCursor = 1;
 
 audio_sound_gain(snd_buttonClick, 0.5, 0);
 

@@ -1,6 +1,15 @@
 moveX = 0;
 moveY = 0;
  
+if (keyboard_check_pressed(ord("N")))
+{
+	set_checkpoint();
+}
+if (keyboard_check_pressed(ord("M")))
+{
+	get_checkpoint();
+}
+ 
 #region: Key Checking
 for ( var i = 0; i < array_length_1d(movement_inputs); i++){
     keyPressed = movement_inputs[i];

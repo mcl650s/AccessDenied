@@ -9,3 +9,6 @@ killedCiv = false;
 spareGuard = false;
 alphaTemp = 0;
 moveSpeed = 3.25;
+
+spawnX = 128;
+spawnY = 960;

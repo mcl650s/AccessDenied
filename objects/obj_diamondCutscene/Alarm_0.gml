@@ -11,5 +11,8 @@ else
 	obj_genericPlayer.alarm[0] = 0;
 	obj_genericPlayer.alarm[1] = 0;
 	global.freeze = false;
+	
+	set_checkpoint();
+	
 	instance_destroy(self);
 }

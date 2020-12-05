@@ -45,5 +45,5 @@ else
 
 if(alphaTemp >= 3)
 {
-	room_restart();	
+	get_checkpoint();
 }

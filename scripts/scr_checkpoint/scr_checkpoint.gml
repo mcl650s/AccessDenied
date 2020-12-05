@@ -70,8 +70,6 @@ function get_checkpoint() {
 
 	// delete etc. objects
 	
-	with (obj_genericPlayer) instance_destroy();
-	
 	if (file_exists("checkpoint.save"))
 	{
 		var buf = buffer_load("checkpoint.save");
@@ -85,10 +83,10 @@ function get_checkpoint() {
 			var loadEntity = array_pop(loadData);
 			
 			var name = loadEntity.obj;
-			if (name == "obj_guard")
+			if (name == "obj_guard" || name == "obj_civilian")
 			{
 				// CharacterLayer maybe
-				with (instance_create_layer(0, 0, layer, asset_get_index(loadEntity.obj)))
+				with (instance_create_layer(0, 0, layer_get_id("CharacterLayer"), asset_get_index(loadEntity.obj)))
 				{
 					patrolCoordinates = loadEntity.patrolCoordinates;
 					x = loadEntity.patrolCoordinates[0, 0];
@@ -107,23 +105,21 @@ function get_checkpoint() {
 					{
 						path_start(path, 2, path_action_stop, false);	
 					}
-					
-					show_debug_message("Loaded guard!");
 				}
-			}
-			else if (name == "obj_civilian")
-			{
-				show_debug_message("Loaded civ!");
-			}
-			
+			}			
 			else {
-				with (instance_create_layer(0, 0, layer, asset_get_index(loadEntity.obj)))
+				with (obj_genericPlayer)
 				{
-					show_debug_message("Loaded player!");
 					x = loadEntity.x;
 					y = loadEntity.y;
 				}
 			}
+		}
+		
+		with (obj_alarm)
+		{
+			image_index = 0;
+			soundPlayed = false;
 		}
 		show_debug_message("Game loaded!");
 	}

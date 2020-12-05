@@ -35,6 +35,7 @@ if(civDistance < 96 || guardDistance < 96)
 	{
 		//Used Non-Lethal Kill on Guard
 		spareGuard = true;
+		global.freeze = true;
 	}
 	else
 	{

@@ -17,7 +17,15 @@ else
 
 if(alphaTemp >= 3)
 {
-	room_restart();	
+	get_checkpoint();
+	alphaTemp = 0;
+	lost = false;
+	global.gameEnd = false;
+	obj_camera.follow = obj_genericPlayer;
+	obj_genericPlayer.moveSpeed = 3.25;
+	obj_genericPlayer.alarm[0] = 0;
+	obj_genericPlayer.alarm[1] = 0;
+	//global.freeze = false;
 }
 
 if(alphaTemp >= 1.75 && x > 4575 && y < 1085 && y > 925)

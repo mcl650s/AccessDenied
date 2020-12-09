@@ -27,6 +27,6 @@ else if (moved && !left && !done)
 
 if (done && !once) 
 {
-	instance_create_depth(x, y, 0, obj_genericWall);	
+	instance_create_depth(x, y, obj_genericPlayer.depth + 1, obj_statueSolid);	
 	once = true;
 }

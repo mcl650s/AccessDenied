@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 4,
+  "bbox_right": 52,
   "bbox_top": 0,
-  "bbox_bottom": 8,
+  "bbox_bottom": 18,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 5,
-  "height": 9,
+  "width": 53,
+  "height": 19,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"28f301ab-7b4d-42a5-a461-9a0b37911d92","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"28f301ab-7b4d-42a5-a461-9a0b37911d92","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},"LayerId":{"name":"4daf025b-f552-4588-a257-ec7ca8a801b8","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_puzzleFour","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},"resourceVersion":"1.0","name":"28f301ab-7b4d-42a5-a461-9a0b37911d92","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"bd0ce236-7380-4ecd-bc64-293bcc50750b","path":"sprites/spr_pushDir/spr_pushDir.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bd0ce236-7380-4ecd-bc64-293bcc50750b","path":"sprites/spr_pushDir/spr_pushDir.yy",},"LayerId":{"name":"17e0c94c-cdb2-496b-bdf0-ef0a28c0143f","path":"sprites/spr_pushDir/spr_pushDir.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pushDir","path":"sprites/spr_pushDir/spr_pushDir.yy",},"resourceVersion":"1.0","name":"bd0ce236-7380-4ecd-bc64-293bcc50750b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_puzzleFour","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},
+    "spriteId": {"name":"spr_pushDir","path":"sprites/spr_pushDir/spr_pushDir.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"afd1be5c-a862-4b3e-b546-3924221e194c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"28f301ab-7b4d-42a5-a461-9a0b37911d92","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fd5dc984-6c91-4dd5-b547-b53d019dc9d3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bd0ce236-7380-4ecd-bc64-293bcc50750b","path":"sprites/spr_pushDir/spr_pushDir.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_puzzleFour","path":"sprites/spr_puzzleFour/spr_puzzleFour.yy",},
+    "parent": {"name":"spr_pushDir","path":"sprites/spr_pushDir/spr_pushDir.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_puzzleFour",
+    "name": "spr_pushDir",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4daf025b-f552-4588-a257-ec7ca8a801b8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"17e0c94c-cdb2-496b-bdf0-ef0a28c0143f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "PuzzleKeyPad",
-    "path": "folders/Sprites/PuzzleKeyPad.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_puzzleFour",
+  "name": "spr_pushDir",
   "tags": [],
   "resourceType": "GMSprite",
 }
